@@ -1,0 +1,37 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1.}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Project Motivation}{3}{section.1.1}%
+\contentsline {chapter}{\numberline {2.}Description of Technologies}{4}{chapter.2}%
+\contentsline {chapter}{\numberline {3.}State of the art}{5}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}Reinforcement Learning}{6}{subsection.3.0.1}%
+\contentsline {subsubsection}{Markov Decision Process (MD)}{6}{subsubsection*.5}%
+\contentsline {subsubsection}{Q-Learning}{8}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {3.0.2}Deep Reinforcement Learning}{9}{subsection.3.0.2}%
+\contentsline {subsubsection}{Episodes and Steps}{10}{subsubsection*.7}%
+\contentsline {subsubsection}{Exploration vs Exploitation trade-off}{10}{subsubsection*.8}%
+\contentsline {subsubsection}{Replay Memory}{11}{subsubsection*.9}%
+\contentsline {subsubsection}{Bellman's Equation}{12}{subsubsection*.10}%
+\contentsline {subsubsection}{Target and Policy Networks}{12}{subsubsection*.11}%
+\contentsline {subsection}{\numberline {3.0.3}Problems of Deep Reinforcement Learning in Real-world}{12}{subsection.3.0.3}%
+\contentsline {chapter}{\numberline {4.}Definition of the Project}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Motivation}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Objectives}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Methodology}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Planning and budget}{16}{section.4.4}%
+\contentsline {chapter}{\numberline {5.}Developed System}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Análisis del sistema}{18}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diseño}{18}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Implementación}{18}{section.5.3}%
+\contentsline {chapter}{\numberline {6.}Results Analysis}{19}{chapter.6}%
+\contentsline {chapter}{\numberline {7.}Conclusions and Future Work}{20}{chapter.7}%
+\contentsline {part}{Appendix}{21}{part*.14}%
+\contentsline {section}{\numberline {.1}Robot Controller}{22}{section.Alph0.1}%
+\contentsline {subsection}{\numberline {.1.1}main.py}{22}{subsection.Alph0.1.1}%
+\contentsline {subsection}{\numberline {.1.2}Robot.py}{24}{subsection.Alph0.1.2}%
+\contentsline {section}{\numberline {.2}Artificial Intelligence Manager}{30}{section.Alph0.2}%
+\contentsline {subsection}{\numberline {.2.1}main.py}{30}{subsection.Alph0.2.1}%
+\contentsline {subsection}{\numberline {.2.2}RLAlgorithm.py}{32}{subsection.Alph0.2.2}%
+\contentsline {subsection}{\numberline {.2.3}Environment.py}{49}{subsection.Alph0.2.3}%
+\contentsline {subsection}{\numberline {.2.4}ImageController.py}{52}{subsection.Alph0.2.4}%
+\contentsline {chapter}{Bibliography}{55}{appendix*.15}%

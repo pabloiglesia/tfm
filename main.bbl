@@ -1,0 +1,398 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{noauthor_formacion_nodate}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{title}{Formación en línea de {CB}3}
+      \field{urlday}{15}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://academy.universal-robots.com/es/formacion-en-linea-gratuita/formacion-en-linea-de-cb3/
+      \endverb
+      \verb{url}
+      \verb https://academy.universal-robots.com/es/formacion-en-linea-gratuita/formacion-en-linea-de-cb3/
+      \endverb
+    \endentry
+    \entry{preferred_networks_inc_bin-picking_2015}{video}{}
+      \name{author}{1}{}{%
+        {{hash=790bea45d8268d178620b5a119cfff1c}{%
+           family={{Preferred Networks, Inc.}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{790bea45d8268d178620b5a119cfff1c}
+      \strng{fullhash}{790bea45d8268d178620b5a119cfff1c}
+      \strng{bibnamehash}{790bea45d8268d178620b5a119cfff1c}
+      \strng{authorbibnamehash}{790bea45d8268d178620b5a119cfff1c}
+      \strng{authornamehash}{790bea45d8268d178620b5a119cfff1c}
+      \strng{authorfullhash}{790bea45d8268d178620b5a119cfff1c}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Autonomous learning of bin-picking robot. Achieved human level performance within 8 hours}
+      \field{title}{Bin-picking Robot Deep Learning}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=ydh_AdWZflA&ab_channel=Pickit3D
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=ydh_AdWZflA&ab_channel=Pickit3D
+      \endverb
+    \endentry
+    \entry{lample_playing_2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=56509a94ba6cdaf0c71304d6cf806cee}{%
+           family={Lample},
+           familyi={L\bibinitperiod},
+           given={Guillaume},
+           giveni={G\bibinitperiod}}}%
+        {{hash=d61a282b0086c5c4d52c371e7c748278}{%
+           family={Chaplot},
+           familyi={C\bibinitperiod},
+           given={Devendra\bibnamedelima Singh},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{c503a37b9b72d558bd238e78ce15632a}
+      \strng{fullhash}{c503a37b9b72d558bd238e78ce15632a}
+      \strng{bibnamehash}{c503a37b9b72d558bd238e78ce15632a}
+      \strng{authorbibnamehash}{c503a37b9b72d558bd238e78ce15632a}
+      \strng{authornamehash}{c503a37b9b72d558bd238e78ce15632a}
+      \strng{authorfullhash}{c503a37b9b72d558bd238e78ce15632a}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Advances in deep reinforcement learning have allowed autonomous agents to perform well on Atari games, often outperforming humans, using only raw pixels to make their decisions. However, most of these games take place in 2D environments that are fully observable to the agent. In this paper, we present the first architecture to tackle 3D environments in first-person shooter games, that involve partially observable states. Typically, deep reinforcement learning methods only utilize visual input for training. We present a method to augment these models to exploit game feature information such as the presence of enemies or items, during the training phase. Our model is trained to simultaneously learn these features along with minimizing a Q-learning objective, which is shown to dramatically improve the training speed and performance of our agent. Our architecture is also modularized to allow different models to be independently trained for different phases of the game. We show that the proposed architecture substantially outperforms built-in {AI} agents of the game as well as humans in deathmatch scenarios.}
+      \field{day}{29}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{{arXiv}:1609.05521 [cs]}
+      \field{month}{1}
+      \field{title}{Playing {FPS} Games with Deep Reinforcement Learning}
+      \field{urlday}{30}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 1609.05521
+      \endverb
+      \verb{file}
+      \verb arXiv Fulltext PDF:C\:\\Users\\pablo\\Zotero\\storage\\9HFZWPIG\\Lample y Chaplot - 2018 - Playing FPS Games with Deep Reinforcement Learning.pdf:application/pdf;arXiv.org Snapshot:C\:\\Users\\pablo\\Zotero\\storage\\S6Y4FSF6\\1609.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1609.05521
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1609.05521
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Machine Learning}
+    \endentry
+    \entry{zhu_target-driven_2017}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=280dc4c18f682e47f79d502f0e89f614}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=62e2828f1a77270a7259b6ae50ac3a7a}{%
+           family={Mottaghi},
+           familyi={M\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0b706d3fe81601d159542c8f971b61eb}{%
+           family={Kolve},
+           familyi={K\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=3111e6ce9795b845ca4e522030cf6657}{%
+           family={Lim},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=29941a55ce9570d3258751081c4834e7}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f536a9246365f63717886015403a0964}{%
+           family={Fei-Fei},
+           familyi={F\bibinithyphendelim F\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=3bbe7ca290dea3886736153a91529beb}{%
+           family={Farhadi},
+           familyi={F\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{490fd5b4d6cd60f752d5a619716f7eee}
+      \strng{fullhash}{2093718d9d463b8b1495c479cac5f115}
+      \strng{bibnamehash}{490fd5b4d6cd60f752d5a619716f7eee}
+      \strng{authorbibnamehash}{490fd5b4d6cd60f752d5a619716f7eee}
+      \strng{authornamehash}{490fd5b4d6cd60f752d5a619716f7eee}
+      \strng{authorfullhash}{2093718d9d463b8b1495c479cac5f115}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Two less addressed issues of deep reinforcement learning are (1) lack of generalization capability to new goals, and (2) data inefficiency, i.e., the model requires several (and often costly) episodes of trial and error to converge, which makes it impractical to be applied to real-world scenarios. In this paper, we address these two issues and apply our model to target-driven visual navigation. To address the first issue, we propose an actor-critic model whose policy is a function of the goal as well as the current state, which allows better generalization. To address the second issue, we propose the {AI}2-{THOR} framework, which provides an environment with high-quality 3D scenes and a physics engine. Our framework enables agents to take actions and interact with objects. Hence, we can collect a huge number of training samples efficiently. We show that our proposed method (1) converges faster than the state-of-the-art deep reinforcement learning methods, (2) generalizes across targets and scenes, (3) generalizes to a real robot scenario with a small amount of fine-tuning (although the model is trained in simulation), (4) is end-to-end trainable and does not need feature engineering, feature matching between frames or 3D reconstruction of the environment.}
+      \field{booktitle}{2017 {IEEE} International Conference on Robotics and Automation ({ICRA})}
+      \field{eventtitle}{2017 {IEEE} International Conference on Robotics and Automation ({ICRA})}
+      \field{month}{5}
+      \field{title}{Target-driven visual navigation in indoor scenes using deep reinforcement learning}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{3357\bibrangedash 3364}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICRA.2017.7989381
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Abstract Record:C\:\\Users\\pablo\\Zotero\\storage\\KU7W7IBK\\7989381.html:text/html;Versión enviada:C\:\\Users\\pablo\\Zotero\\storage\\62IF7Y4A\\Zhu et al. - 2017 - Target-driven visual navigation in indoor scenes u.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\pablo\\Zotero\\storage\\9UXXHAH7\\7989381.html:text/html
+      \endverb
+      \keyw{actor-critic model,{AI}2-{THOR} framework,deep reinforcement learning,high-quality 3D scenes,indoor scenes,learning (artificial intelligence),Learning (artificial intelligence),Navigation,path planning,Physics,physics engine,real robot scenario,robot vision,Robots,target-driven visual navigation,Three-dimensional displays,Training,Visualization}
+    \endentry
+    \entry{noauthor_reinforcement_nodate}{online}{}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This series is all about reinforcement learning ({RL})! Here, we’ll gain an understanding of the intuition, the math, and the coding involved with {RL}. We’ll first start out with an introduction to {RL} wh}
+      \field{langid}{english}
+      \field{title}{Reinforcement Learning - Goal Oriented Intelligence}
+      \field{urlday}{28}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\pablo\\Zotero\\storage\\DSY2MV9W\\PLZbbT5o_s2xoWNVdDudn51XM8lOuZ_Njv.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://deeplizard.com/learn/playlist/PLZbbT5o_s2xoWNVdDudn51XM8lOuZ_Njv
+      \endverb
+      \verb{url}
+      \verb https://deeplizard.com/learn/playlist/PLZbbT5o_s2xoWNVdDudn51XM8lOuZ_Njv
+      \endverb
+    \endentry
+    \entry{openai_gym_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0523b13262b12c215d8009938f5c14f1}{%
+           family={{OpenAI}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{fullhash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{bibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorbibnamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authornamehash}{0523b13262b12c215d8009938f5c14f1}
+      \strng{authorfullhash}{0523b13262b12c215d8009938f5c14f1}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{A toolkit for developing and comparing reinforcement learning algorithms}
+      \field{shorttitle}{Gym}
+      \field{title}{Gym: A toolkit for developing and comparing reinforcement learning algorithms}
+      \field{urlday}{30}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\pablo\\Zotero\\storage\\WHBH2G8A\\gym.openai.com.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://gym.openai.com
+      \endverb
+      \verb{url}
+      \verb https://gym.openai.com
+      \endverb
+    \endentry
+    \entry{mahmood_setting_2018}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0c8a1e7ff9cac7d8d81e21809b418889}{%
+           family={Mahmood},
+           familyi={M\bibinitperiod},
+           given={A.\bibnamedelimi Rupam},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=d01e483ed3ba78f241785d182b510e76}{%
+           family={Korenkevych},
+           familyi={K\bibinitperiod},
+           given={Dmytro},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1acd5a686d407af1d4cd80d078f0546b}{%
+           family={Komer},
+           familyi={K\bibinitperiod},
+           given={Brent\bibnamedelima J.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0bc66fe902c838c216bd3175dfeb045b}{%
+           family={Bergstra},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{76916618d65fcba4f96e4138b3adc8bc}
+      \strng{fullhash}{486cba0b68c2b7825845a83638afeac8}
+      \strng{bibnamehash}{76916618d65fcba4f96e4138b3adc8bc}
+      \strng{authorbibnamehash}{76916618d65fcba4f96e4138b3adc8bc}
+      \strng{authornamehash}{76916618d65fcba4f96e4138b3adc8bc}
+      \strng{authorfullhash}{486cba0b68c2b7825845a83638afeac8}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reinforcement learning is a promising approach to developing hard-to-engineer adaptive solutions for complex and diverse robotic tasks. However, learning with real-world robots is often unreliable and difficult, which resulted in their low adoption in reinforcement learning research. This difficulty is worsened by the lack of guidelines for setting up learning tasks with robots. In this work, we develop a learning task with a {UR}5 robotic arm to bring to light some key elements of a task setup and study their contributions to the challenges with robots. We find that learning performance can be highly sensitive to the setup, and thus oversights and omissions in setup details can make effective learning, reproducibility, and fair comparison hard. Our study suggests some mitigating steps to help future experimenters avoid difficulties and pitfalls. We show that highly reliable and repeatable experiments can be performed in our setup, indicating the possibility of reinforcement learning research extensively based on real-world robots.}
+      \field{day}{19}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{{arXiv}:1803.07067 [cs, stat]}
+      \field{month}{3}
+      \field{title}{Setting up a Reinforcement Learning Task with a Real-World Robot}
+      \field{urlday}{30}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 1803.07067
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1803.07067
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1803.07067
+      \endverb
+      \keyw{Computer Science - Artificial Intelligence,Computer Science - Machine Learning,Computer Science - Robotics,Statistics - Machine Learning}
+    \endentry
+    \entry{lei_dynamic_2018}{article}{}
+      \name{author}{3}{}{%
+        {{hash=a1b32c26f47d1ee17fafff328316936b}{%
+           family={Lei},
+           familyi={L\bibinitperiod},
+           given={Xiaoyun},
+           giveni={X\bibinitperiod}}}%
+        {{hash=83b9c32827582f6a752fc933d9fab11d}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zhian},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=76afe273b734c417cc5b404fa4f48251}{%
+           family={Dong},
+           familyi={D\bibinitperiod},
+           given={Peifang},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c9a2ce268b5d18fccb7bcecf2b05113}
+      \strng{fullhash}{8c9a2ce268b5d18fccb7bcecf2b05113}
+      \strng{bibnamehash}{8c9a2ce268b5d18fccb7bcecf2b05113}
+      \strng{authorbibnamehash}{8c9a2ce268b5d18fccb7bcecf2b05113}
+      \strng{authornamehash}{8c9a2ce268b5d18fccb7bcecf2b05113}
+      \strng{authorfullhash}{8c9a2ce268b5d18fccb7bcecf2b05113}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Dynamic path planning of unknown environment has always been a challenge for mobile robots. In this paper, we apply double Q-network ({DDQN}) deep reinforcement learning proposed by {DeepMind} in 2016 to dynamic path planning of unknown environment. The reward and punishment function and the training method are designed for the instability of the training stage and the sparsity of the environment state space. In different training stages, we dynamically adjust the starting position and target position. With the updating of neural network and the increase of greedy rule probability, the local space searched by agent is expanded. Pygame module in {PYTHON} is used to establish dynamic environments. Considering lidar signal and local target position as the inputs, convolutional neural networks ({CNNs}) are used to generalize the environmental state. Q-learning algorithm enhances the ability of the dynamic obstacle avoidance and local planning of the agents in environment. The results show that, after training in different dynamic environments and testing in a new environment, the agent is able to reach the local target position successfully in unknown dynamic environment.}
+      \field{day}{18}
+      \field{issn}{1687-9600, 1687-9619}
+      \field{journaltitle}{Journal of Robotics}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{shortjournal}{Journal of Robotics}
+      \field{title}{Dynamic Path Planning of Unknown Environment Based on Deep Reinforcement Learning}
+      \field{urlday}{30}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{volume}{2018}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1155/2018/5781591
+      \endverb
+      \verb{file}
+      \verb Lei et al. - 2018 - Dynamic Path Planning of Unknown Environment Based.pdf:C\:\\Users\\pablo\\Zotero\\storage\\XWEJHI89\\Lei et al. - 2018 - Dynamic Path Planning of Unknown Environment Based.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.hindawi.com/journals/jr/2018/5781591/
+      \endverb
+      \verb{url}
+      \verb https://www.hindawi.com/journals/jr/2018/5781591/
+      \endverb
+    \endentry
+    \entry{wiering_reinforcement_2001}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a6855779cbaaf0280e06a4d858e5136d}{%
+           family={Wiering},
+           familyi={W\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a6855779cbaaf0280e06a4d858e5136d}
+      \strng{fullhash}{a6855779cbaaf0280e06a4d858e5136d}
+      \strng{bibnamehash}{a6855779cbaaf0280e06a4d858e5136d}
+      \strng{authorbibnamehash}{a6855779cbaaf0280e06a4d858e5136d}
+      \strng{authornamehash}{a6855779cbaaf0280e06a4d858e5136d}
+      \strng{authorfullhash}{a6855779cbaaf0280e06a4d858e5136d}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We study using reinforcement learning in dynamic environments. Such environments may contain many dynamic objects which makes optimal planning hard. One way of using information about all dynamic objects is to expand the state description, but this results in a high dimensional policy space. Our approach is to instantiate information about dynamic objects in the model of the environment and to replan using model-based reinforcement learning whenever this information changes. Furthermore, our approach is combined with an a-priori model of the changing parts of the environment, which enables the agent to optimally plan a course of action. Results on a navigation task with multiple dynamic hostile agents show that our system is able to learn good solutions minimizing the risk of hitting hostile agents.}
+      \field{day}{27}
+      \field{month}{8}
+      \field{title}{Reinforcement Learning in Dynamic Environments using Instantiated Information}
+      \field{year}{2001}
+      \field{dateera}{ce}
+    \endentry
+    \entry{noauthor_agile_nodate}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labeltitlesource}{title}
+      \field{title}{Agile Methodology: What is Agile Software Development Model?}
+      \field{urlday}{2}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Agile Methodology\: What is Agile Software Development Model?:C\:\\Users\\pablo\\Zotero\\storage\\RY6WUWCL\\agile-scrum-extreme-testing.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.guru99.com/agile-scrum-extreme-testing.html
+      \endverb
+      \verb{url}
+      \verb https://www.guru99.com/agile-scrum-extreme-testing.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
