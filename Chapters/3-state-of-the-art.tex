@@ -125,6 +125,7 @@
 				\end{enumerate}
 			\end{enumerate}}
 			
+			Using this strategy, the agent will rather explore or exploit the environment during the training. In the first steps the probability of a random action (exploring) will be much hihger than in the last steps of the algorithm. This probability will keep decreasing during the training, until it reaches the minimum exploring rate, which is normally set to 10%.
 			
 		
 		\subsubsection{Replay Memory}
@@ -142,9 +143,25 @@
 				\end{enumerate}
 			\end{enumerate}
 			
-			Optimizing Replay Memory can be a challenge, because, if we are using a Graphic Card in the training, we would be storing all the experiences in its memory. But, why do we need to store all the experiences? We could also be using the last N experiences to train the network and it would be a less memory-consumption demanding solution. The answer to this question is tha
+			Optimizing Replay Memory can be a challenge, because, if we are using a Graphic Card in the training, we would be storing all the experiences in its memory. But, why do we need to store all the experiences? We could also be using the last N experiences to train the network and it would be a less memory-consumption demanding solution. 
+			
+The answer to this question is that Reinforcement Learning Networks converge really slowlly and variance between consecutive steps is really low. Using consecutive experiences to train the network would result though in a slower and biased learning. Besides, this way of working is better for learning real-world experience, where there are infinit different states, as the experience gainend in previous steps will be used multiple times later to train the network.
+
+
 		\subsubsection{Bellman's Equation}
-		
+			\begin{gather*}
+				q_*(s,a) = E[ R_{t+1} + \gamma max(q_*(s', a' )]
+			\end{gather*}
+			
+			Suppose we have some arbitrary deep neural network that accepts states from a given environment as input. For each given state input, the network outputs estimated Q-values for each action that can be taken from that state. The objective of this network is to approximate the optimal Q-function, and remember that the optimal Q-function will satisfy the Bellman equation that we covered previously:
+
+  
+With this in mind, the loss from the network is calculated by comparing the outputted Q-values to the target Q-values from the right hand side of the Bellman equation, and as with any network, the objective here is to minimize this loss.
+
+
+After the loss is calculated, the weights within the network are updated via SGD and backpropagation, again, just like with any other typical network. This process is done over and over again for each state in the environment until we sufficiently minimize the loss and get an approximate optimal Q-function.
+
+So, take a second now to think about how we previously used the Bellman equation to compute and update Q-values in our Q-table in order to find the optimal Q-function. Now, with deep Q-learning, our network will make use of the Bellman equation to estimate the Q-values to find the optimal Q-function. So, we’re still solving the same general problem here, just with a different algorithm. Rather than making use of value iteration to solve the problem, we’re now using a deep neural network.
 		
 		\subsubsection{Target and Policy Networks}
 		
