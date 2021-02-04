@@ -4,16 +4,60 @@
 
 	\begin{itemize}
 	\item[\textendash]ROS + catkin  % En profundidad
+			The first decission we had to make was about the architecture of the project. Was it a good idea to build all the project in the same computer? How should we communicate with the Robot?
+
+		We found the best solution for this questions in ROS (Robot Operative System), which is a framework for the development of software for robots that provides the functionality of an operating system in a heterogeneous cluster. ROS was originally developed in 2007 under the name switchyard by the Stanford Artificial Intelligence Laboratory to support the Stanford Artificial Intelligence Robot (STAIR) project. Since 2008, development has continued primarily at Willow Garage, a robotic research institute with more than twenty institutions collaborating on a federated development model.
+
+		ROS provides the standard services of an operating system such as hardware abstraction, low-level device control, implementation of commonly used functionality, message passing between processes, and package maintenance. It is based on a graph architecture where the processing takes place in the nodes that can receive, send and multiplex messages from sensors, control, states, schedules and actuators, among others. The library is oriented for a UNIX system (Ubuntu (Linux)) although it is also adapting to other operating systems such as Fedora, Mac OS X, Arch, Gentoo, OpenSUSE, Slackware, Debian or Microsoft Windows, considered as 'experimental'.
+		ROS is free software under BSD license terms. This license allows freedom for commercial and investigative use. Contributions of packages in ros-pkg are under a variety of different licenses.
+
+		All of these features made ROS ideal for the project. Specially the following ones:
+			- Universal Robots drivers for ROS using mooveit make it possible to controll ROS remotelly.
+			- ROS is a multi-node oriented framework, which allows us to take all the advantages of micro-services. We can split the software by functionallity gaining:
+				○ The possibility of giving more or less computation power to each functionality depending on its needs. In the project we have useed from  computers with the better Nvidia Graphic card and 32 GB of RAM to other mini-computers such as a Raspberry-pi or an Arduino Card.
+				○ The chance of using a different environment for each functionality. Different versions of python and even different programming languages, diferent versions of libraries, diferent Operative Systems, etc.
+				○ Isolation of each component of the project, allowing us to develop separatly each functionality without affecting the rest of the functionalities of the project.
+			- It can work over an Arduino Card. It is not self sufficient, as it needs to be serial connected to a computer (Or Raspberry pi) in orther to work. We needed the arduino card in order to build our "home made" vaccuum gripper.
+			- It is open source and have a huge community, so we could reuse some already developed solutions such as the usb_cam package, which let us take pictures from a camara connected to another node or computer.
+
+		Catkin is the current ROS build tool, having replaced rosbuild. catkin is based on CMake, is cross-platform, open source and independent of the programming language.
+
+
 	\item[\textendash]pytorch
+	
+	PyTorch is a Python package designed to perform numerical calculations using tensor programming. It also allows its execution on GPU to speed up calculations.
+
+	Typically PyTorch is used both to replace numpy and process calculations on GPUs and for research and development in the field of machine learning, mainly focused on the development of neural networks. In this case we will use PyTorch in both the Reinforcement Learning algorithm and the image Processing.
+
+	PyTorch is a very recent library and despite this it has a large number of manuals and tutorials where to find examples. In addition to a community that grows by leaps and bounds.
+	PyTorch has a very simple interface for creating neural networks despite working directly with tensors without the need for a library at a higher level such as Keras for Theano or Tensorflow.
+	Unlike other packages like Tensorflow, PyTorch works with dynamic graphs instead of static ones. This means that at runtime the functions can be modified and the calculation of the gradient will vary with them. On the other hand, in Tensorflow we must first define the computation graph and then use the session to calculate the results of the tensors, this makes it difficult to debug the code and makes its implementation more tedious.
+	PyTorch has support to run on graphics cards (GPU), it uses internally CUDA, an API that connects the CPU with the GPU that has been developed by NVIDIA.
+
 	\item[\textendash]arduino
+		Arduino is an open source electronics creation platform, which is based on free hardware and software, flexible and easy to use for creators and developers. This platform allows the creation of different types of single-board microcomputers that can be used by the developer community for different types of use.
+
+		As commented before, we will use Arduino Card in order to build a Vaccuum Gripper for the Robot. It will be connected with all the other nodes using ROS Queues.
+
+
 	\item[\textendash]github
+	
+			GitHub, Inc. is a provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project. Headquartered in California, it has been a subsidiary of Microsoft since 2018.
+		GitHub offers its basic services free of charge. Its more advanced professional and enterprise services are commercial. Free GitHub accounts are commonly used to host open-source projects. As of January 2019, GitHub offers unlimited private repositories to all plans, including free accounts, but allowed only up to three collaborators per repository for free. Starting from April 15, 2020, the free plan allows unlimited collaborators, but restricts private repositories to 2,000 minutes of GitHub Actions per month. As of January 2020, GitHub reports having over 40 million users  and more than 190 million repositories  (including at least 28 million public repositories),  making it the largest host of source code in the world.
+
 	\item[\textendash]CUDA
+			CUDA stands for Compute Unified Device Architecture, which refers to a parallel computing platform including a compiler and a set of development tools created by nVidia that allow programmers to use a variation of the language. C programming for encoding algorithms on nVidia GPUs.
+		Through wrappers you can use Python, Fortran and Java instead of C / C ++.
+		Works on all nVidia GPUs from the G8X series onwards, including GeForce, Quadro, ION, and the Tesla line.1 nVidia claims that programs developed for the GeForce 8 series will also work without modification on all future nVidia cards, thanks to binary compatibility.
+		CUDA tries to exploit the advantages of GPUs over general purpose CPUs by using the parallelism offered by its multiple cores, which allow the launch of a very high number of simultaneous threads. Therefore, if an application is designed using multiple threads that perform independent tasks (which is what GPUs do when processing graphics, their natural task), a GPU will be able to offer great performance in fields that could range from computational biology to biology. crypto, for example.
+		The first SDK was released in February 2007 initially for Windows, Linux, and later in version 2.0 for Mac OS. It is currently offered for Windows XP / Vista / 7/8/102, for Linux 32/64 bits3 and for macOS4.
+
 	\item[\textendash]moveit
 	\item[\textendash]UR driver	
 	\item[\textendash]UR3 robot
-	\item[\textendash]gazebo
-	\item[\textendash]arduino
-	\item[\textendash]Reinforcement learning % En mucha profundidad, Deeplizard + artículos
 	\item[\textendash]anaconda
+		Anaconda is a free and open distribution of the Python and R languages, used in data science, and machine learning. This includes processing of large volumes of information, predictive analytics and scientific computations. It is aimed at simplifying the deployment and management of software packages.
+		The different versions of the packages are managed through the conda package management system, which makes it quite easy to install, run, and update data science and machine learning software such as Scikit-team, TensorFlow and SciPy.
+		The Anaconda distribution is used by 6 million users and includes more than 250 data science packages valid for Windows, Linux, and MacOS.
 	\end{itemize}
 	
