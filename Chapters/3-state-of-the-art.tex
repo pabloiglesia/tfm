@@ -195,40 +195,62 @@
 		
 			As a spoiler, I can say that $q(s_{t+1}$ and $q(s_t, a_t)$ will not be calculated with the same network. But.. why?
 			
-			Let's see what could happen if we calculated both of the values with the same network. If we used the same network, we would calculate the loss of the neural network as the difference between two consecutive 
+			Imagine that we have an experience, which is composed of an initial state, an action that has been taken, the state reached with this action and a reward. Remembering previous section, the loss of the neural network is calculated as the difference between the q-value of the initial state and the action taken and the optimal q-value of the expected cumulative reward (or target value) of the action.
+			
+			Q-values are calculated using the states as input of Neural Networks. Let's see what could happen if we calculated both of the values with the same network. In this case, once we had the loss calculated, we would use back-propagation to adapt the weights of the Neural Network and make the q-value of the initial state more similar to the target q-value.
+			
+			The problem here comes because as both q-values are using the same Neural network to be calculated, when we change the weights to move the initial q-value to one direction, the target q-value is moving in the same direction, so we have not reduce the distance between the two values. It is basically like a dog chasing its tail.
+			
+			To solve this problem we introduce the target-network. This network is basically a frozen clone of the policy network that we only use to calculate the target value of each action. This way, when we gain stability during the training of the RL Algorithm. The target-network is updated periodically after a certain amount of steps, so is always updated.
 			
 			
+		\subsubsection{DQL Training}
 			
-			
-			
-			
-			
-			We do the first pass to calculate the Q-value for the relevant action, and then we do a second pass in order to calculate the target Q-value for this same action. Our objective is to get the Q-value to approximate the target Q-value.
-			
-			Remember, we don't know ahead of time what the target Q-value even is, so we attempt to approximate it with the network. This second pass occurs using the same weights in the network as the first pass.
-			
-			
-			Given this, when our weights update, our outputted Q-values will update, but so will our target Q-values since the targets are calculated using the same weights. So, our Q-values will be updated with each iteration to move closer to the target Q-values, but the target Q-values will also be moving in the same direction.
-			
-			As Andong put it in the comments of the last video, this makes the optimization appear to be chasing its own tail, which introduces instability. As our Q-values move closer and closer to their targets, the targets continue to move further and further because we're using the same network to calculate both of these values.
-			
-			
-			Well, here's a perfect time to introduce the second network that we mentioned earlier. Rather than doing a second pass to the policy network to calculate the target Q-values, we instead obtain the target Q-values from a completely separate network, appropriately called the target network.
-			
-			The target network is a clone of the policy network. Its weights are frozen with the original policy network’s weights, and we update the weights in the target network to the policy network’s new weights every certain amount of time steps. This certain amount of time steps can be looked at as yet another hyperparameter that we'll have to test out to see what works best for us.
-			
-			
-			So now, the first pass still occurs with the policy network. The second pass, however, for the following state occurs with the target network. With this target network, we're able to obtain the  Q-value for the next state, and again, plug this value into the Bellman equation in order to calculate the target Q-value for the first state.
-			
-			
-			This is all we use the target network for — To find the value of this  term so that we can calculate the target Q-value for any state passed to the policy network.
-			As it turns out, this removes much of the instability introduced by using only one network to calculate both the Q-values, as well as the target Q-values. We now have something fixed, i.e. fixed Q-targets, that we want our policy network to approximate. So, we no longer have the dog-chasing-it's-tail problem.
-			
-			As mentioned though, these values don't stay completely fixed the entire time. After  amount of time steps, we'll update the weights in the target network with the weights from our policy network, which will in turn, update the target Q-values with respect to what it's learned over those past time steps. This will cause the policy network to start to approximate the updated targets.
+			During the previous sections I have been explaining a lot of concepts about Deep Reinforcement Learning Training. I have explained them and how they affect the training. It is a really complex process so probably a sum-up will help understanding it.
 		
-		
-		
-		
+			The training basically uses the following schema:
+			
+			\begin{itemize}
+				\item[\textendash]Initialize replay memory capacity.
+				\item[\textendash]Initialize the policy network with random weights.
+				\item[\textendash]Clone the policy network, and call it the target network.
+				\item[\textendash]For each episode:
+				\begin{itemize}
+					\item[\textendash]Initialize the starting state.
+					\item[\textendash]For each time step:
+					\begin{itemize}
+						\item[\textendash]Select an action via exploration or exploitation
+						\item[\textendash]Execute selected action and observe reward and next state.
+						\item[\textendash]Store experience in replay memory.
+						\item[\textendash]Sample random batch from replay memory.
+						\item[\textendash]Preprocess states from batch.
+						\item[\textendash]Pass batch of preprocessed states to policy network.
+						\item[\textendash]NN training. Weight back-propagation:
+						\begin{itemize}
+							\item[\textendash]Calculate loss between output Q-values and target Q-values.
+							\item[\textendash]Using both the target and the policy networks to increase stability.
+							\item[\textendash]Gradient descent updates weights in the policy network to minimize loss.
+						\end{itemize}
+						
+					\end{itemize}
+				\end{itemize}
+				\item[\textendash]After X time steps or episodes, weights in the target network are updated to the weights in the policy network.
+			\end{itemize}
+			
+			This training can also be explained with \autocite{fig:training}, where the Pool is the Replay Memory that stores the sample (experiences) from real interaction with the environment and feeds the training node of random sample of experiences.
+			
+			Then, we can see that we use the Q-Network (policy network) to predict actions, but also to calculate the q-value of Replay Memory's batch. Then, we use the target network to predict action-value of state s1 with the predicted action in Q estimation Network, andthis network is updated in a low rate.
+			
+			Finally, the action taken in the Dynamic Environment can be predicted by the Neural Network or Randomly chosen (Stochastic search). This is the way of representing epsiolon-Greedy Strategy. 
+			
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{Images/Training}
+				\caption[RL Training]{Reinforcement Learning Training Summary}
+				\label{fig:training}
+			\end{figure}
+				
+			
 		
 		
 	\subsection{Problems of Deep Reinforcement Learning in Real-world}

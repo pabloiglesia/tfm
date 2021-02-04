@@ -3,35 +3,36 @@
 \contentsline {chapter}{\numberline {1.}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Project Motivation}{3}{section.1.1}%
 \contentsline {chapter}{\numberline {2.}Description of Technologies}{4}{chapter.2}%
-\contentsline {chapter}{\numberline {3.}State of the art}{5}{chapter.3}%
-\contentsline {subsection}{\numberline {3.0.1}Reinforcement Learning}{6}{subsection.3.0.1}%
-\contentsline {subsubsection}{Markov Decision Process (MD)}{6}{subsubsection*.5}%
-\contentsline {subsubsection}{Q-Learning}{8}{subsubsection*.6}%
-\contentsline {subsection}{\numberline {3.0.2}Deep Reinforcement Learning}{9}{subsection.3.0.2}%
-\contentsline {subsubsection}{Episodes and Steps}{10}{subsubsection*.7}%
-\contentsline {subsubsection}{Exploration vs Exploitation trade-off}{10}{subsubsection*.8}%
-\contentsline {subsubsection}{Replay Memory}{12}{subsubsection*.9}%
-\contentsline {subsubsection}{Bellman's Equation}{12}{subsubsection*.10}%
-\contentsline {subsubsection}{Target and Policy Networks}{14}{subsubsection*.11}%
-\contentsline {subsection}{\numberline {3.0.3}Problems of Deep Reinforcement Learning in Real-world}{16}{subsection.3.0.3}%
-\contentsline {chapter}{\numberline {4.}Definition of the Project}{18}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Motivation}{18}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Objectives}{18}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Methodology}{19}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Planning and budget}{20}{section.4.4}%
-\contentsline {chapter}{\numberline {5.}Developed System}{22}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Análisis del sistema}{22}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Diseño}{22}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Implementación}{22}{section.5.3}%
-\contentsline {chapter}{\numberline {6.}Results Analysis}{23}{chapter.6}%
-\contentsline {chapter}{\numberline {7.}Conclusions and Future Work}{24}{chapter.7}%
-\contentsline {part}{Appendix}{25}{part*.14}%
-\contentsline {section}{\numberline {.1}Robot Controller}{26}{section.Alph0.1}%
-\contentsline {subsection}{\numberline {.1.1}main.py}{26}{subsection.Alph0.1.1}%
-\contentsline {subsection}{\numberline {.1.2}Robot.py}{28}{subsection.Alph0.1.2}%
-\contentsline {section}{\numberline {.2}Artificial Intelligence Manager}{34}{section.Alph0.2}%
-\contentsline {subsection}{\numberline {.2.1}main.py}{34}{subsection.Alph0.2.1}%
-\contentsline {subsection}{\numberline {.2.2}RLAlgorithm.py}{36}{subsection.Alph0.2.2}%
-\contentsline {subsection}{\numberline {.2.3}Environment.py}{54}{subsection.Alph0.2.3}%
-\contentsline {subsection}{\numberline {.2.4}ImageController.py}{57}{subsection.Alph0.2.4}%
-\contentsline {chapter}{Bibliography}{59}{appendix*.15}%
+\contentsline {section}{\numberline {2.1}ROS + catkin}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}pytorch}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}arduino}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}github}{7}{section.2.4}%
+\contentsline {section}{\numberline {2.5}CUDA}{8}{section.2.5}%
+\contentsline {section}{\numberline {2.6}moveit}{9}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Universal Robots driver for ROS}{9}{section.2.7}%
+\contentsline {section}{\numberline {2.8}UR3 robot}{10}{section.2.8}%
+\contentsline {section}{\numberline {2.9}anaconda}{10}{section.2.9}%
+\contentsline {chapter}{\numberline {3.}State of the art}{12}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}Reinforcement Learning}{13}{subsection.3.0.1}%
+\contentsline {subsubsection}{Markov Decision Process (MD)}{13}{subsubsection*.5}%
+\contentsline {subsubsection}{Q-Learning}{15}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {3.0.2}Deep Reinforcement Learning}{16}{subsection.3.0.2}%
+\contentsline {subsubsection}{Episodes and Steps}{17}{subsubsection*.7}%
+\contentsline {subsubsection}{Exploration vs Exploitation trade-off}{17}{subsubsection*.8}%
+\contentsline {subsubsection}{Replay Memory}{19}{subsubsection*.9}%
+\contentsline {subsubsection}{Bellman's Equation}{19}{subsubsection*.10}%
+\contentsline {subsubsection}{Target and Policy Networks}{21}{subsubsection*.11}%
+\contentsline {subsubsection}{DQL Training}{22}{subsubsection*.12}%
+\contentsline {subsection}{\numberline {3.0.3}Problems of Deep Reinforcement Learning in Real-world}{23}{subsection.3.0.3}%
+\contentsline {chapter}{\numberline {4.}Definition of the Project}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Motivation}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Objectives}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Methodology}{27}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Planning and budget}{28}{section.4.4}%
+\contentsline {chapter}{\numberline {5.}Developed System}{30}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Análisis del sistema}{30}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Diseño}{30}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Implementación}{30}{section.5.3}%
+\contentsline {chapter}{\numberline {6.}Results Analysis}{31}{chapter.6}%
+\contentsline {chapter}{\numberline {7.}Conclusions and Future Work}{32}{chapter.7}%
+\contentsline {chapter}{Bibliography}{33}{chapter*.15}%

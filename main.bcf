@@ -2356,10 +2356,11 @@
     <bcf:citekey order="4">zhu_target-driven_2017</bcf:citekey>
     <bcf:citekey order="5">noauthor_reinforcement_nodate</bcf:citekey>
     <bcf:citekey order="6">openai_gym_nodate</bcf:citekey>
-    <bcf:citekey order="7">mahmood_setting_2018</bcf:citekey>
-    <bcf:citekey order="8">lei_dynamic_2018</bcf:citekey>
-    <bcf:citekey order="9">wiering_reinforcement_2001</bcf:citekey>
-    <bcf:citekey order="10">noauthor_agile_nodate</bcf:citekey>
+    <bcf:citekey order="7">fig:training</bcf:citekey>
+    <bcf:citekey order="8">mahmood_setting_2018</bcf:citekey>
+    <bcf:citekey order="9">lei_dynamic_2018</bcf:citekey>
+    <bcf:citekey order="10">wiering_reinforcement_2001</bcf:citekey>
+    <bcf:citekey order="11">noauthor_agile_nodate</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -1,28 +1,28 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Project Motivation}{chapter.1}% 2
 \BOOKMARK [0][-]{chapter.2}{Description of Technologies}{}% 3
-\BOOKMARK [0][-]{chapter.3}{State of the art}{}% 4
-\BOOKMARK [1][-]{subsection.3.0.1}{Reinforcement Learning}{chapter.3}% 5
-\BOOKMARK [2][-]{subsection.3.0.2}{Deep Reinforcement Learning}{subsection.3.0.1}% 6
-\BOOKMARK [2][-]{subsection.3.0.3}{Problems of Deep Reinforcement Learning in Real-world}{subsection.3.0.1}% 7
-\BOOKMARK [0][-]{chapter.4}{Definition of the Project}{}% 8
-\BOOKMARK [1][-]{section.4.1}{Motivation}{chapter.4}% 9
-\BOOKMARK [1][-]{section.4.2}{Objectives}{chapter.4}% 10
-\BOOKMARK [1][-]{section.4.3}{Methodology}{chapter.4}% 11
-\BOOKMARK [1][-]{section.4.4}{Planning and budget}{chapter.4}% 12
-\BOOKMARK [0][-]{chapter.5}{Developed System}{}% 13
-\BOOKMARK [1][-]{section.5.1}{An\341lisis del sistema}{chapter.5}% 14
-\BOOKMARK [1][-]{section.5.2}{Dise\361o}{chapter.5}% 15
-\BOOKMARK [1][-]{section.5.3}{Implementaci\363n}{chapter.5}% 16
-\BOOKMARK [0][-]{chapter.6}{Results Analysis}{}% 17
-\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 18
-\BOOKMARK [-1][-]{part*.14}{Appendix}{}% 19
-\BOOKMARK [0][-]{section.Alph0.1}{Robot Controller}{part*.14}% 20
-\BOOKMARK [1][-]{subsection.Alph0.1.1}{main.py}{section.Alph0.1}% 21
-\BOOKMARK [2][-]{subsection.Alph0.1.2}{Robot.py}{subsection.Alph0.1.1}% 22
-\BOOKMARK [1][-]{section.Alph0.2}{Artificial Intelligence Manager}{section.Alph0.1}% 23
-\BOOKMARK [2][-]{subsection.Alph0.2.1}{main.py}{section.Alph0.2}% 24
-\BOOKMARK [2][-]{subsection.Alph0.2.2}{RLAlgorithm.py}{section.Alph0.2}% 25
-\BOOKMARK [2][-]{subsection.Alph0.2.3}{Environment.py}{section.Alph0.2}% 26
-\BOOKMARK [2][-]{subsection.Alph0.2.4}{ImageController.py}{section.Alph0.2}% 27
-\BOOKMARK [0][-]{appendix*.15}{Bibliography}{part*.14}% 28
+\BOOKMARK [1][-]{section.2.1}{ROS + catkin}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{pytorch}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.3}{arduino}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.4}{github}{chapter.2}% 7
+\BOOKMARK [1][-]{section.2.5}{CUDA}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.6}{moveit}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.7}{Universal Robots driver for ROS}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.8}{UR3 robot}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.9}{anaconda}{chapter.2}% 12
+\BOOKMARK [0][-]{chapter.3}{State of the art}{}% 13
+\BOOKMARK [1][-]{subsection.3.0.1}{Reinforcement Learning}{chapter.3}% 14
+\BOOKMARK [2][-]{subsection.3.0.2}{Deep Reinforcement Learning}{subsection.3.0.1}% 15
+\BOOKMARK [2][-]{subsection.3.0.3}{Problems of Deep Reinforcement Learning in Real-world}{subsection.3.0.1}% 16
+\BOOKMARK [0][-]{chapter.4}{Definition of the Project}{}% 17
+\BOOKMARK [1][-]{section.4.1}{Motivation}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.2}{Objectives}{chapter.4}% 19
+\BOOKMARK [1][-]{section.4.3}{Methodology}{chapter.4}% 20
+\BOOKMARK [1][-]{section.4.4}{Planning and budget}{chapter.4}% 21
+\BOOKMARK [0][-]{chapter.5}{Developed System}{}% 22
+\BOOKMARK [1][-]{section.5.1}{An\341lisis del sistema}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.2}{Dise\361o}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.3}{Implementaci\363n}{chapter.5}% 25
+\BOOKMARK [0][-]{chapter.6}{Results Analysis}{}% 26
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 27
+\BOOKMARK [0][-]{chapter*.15}{Bibliography}{}% 28
