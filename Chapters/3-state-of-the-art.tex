@@ -42,7 +42,7 @@
 				\item[\textendash]The environment transits to th next state: \textbf{ \boldmath$S_t = S_{t+1}$}.
 				\item[\textendash] Environment produces a new reward, which can be represented with the following formula: \boldmath
 				\begin{gather*}
-					P(s', r, s, a) = P_{r}\{S_{t+1}=s', R_{t+1}=r, S_{t}=s, A_{t}=a\}
+					P(s', r, s, a) = P_{r}\{S_{t+1}=s', R_t=r, S_{t}=s, A_{t}=a\}
 				\end{gather*}
 			\end{itemize}
 			
@@ -130,7 +130,7 @@
 		
 		\subsubsection{Replay Memory}
 		
-			Everytime that the agent performs an action, either by exploring or exploiting, the agent lives an experience. For the purpose of training the algorithm, we will store all these experiences.
+			Every time that the agent performs an action, either by exploring or exploiting, the agent lives an experience. For the purpose of training the algorithm, we will store all these experiences.
 			
 			Experiences are formed by the initial state, the action taken, the state reached (final state) and the reward gotten and they are stored in the Replay Memory. Then, every time that an action is taken, the algorithm is trained following this steps:
 			
@@ -145,26 +145,86 @@
 			
 			Optimizing Replay Memory can be a challenge, because, if we are using a Graphic Card in the training, we would be storing all the experiences in its memory. But, why do we need to store all the experiences? We could also be using the last N experiences to train the network and it would be a less memory-consumption demanding solution. 
 			
-The answer to this question is that Reinforcement Learning Networks converge really slowlly and variance between consecutive steps is really low. Using consecutive experiences to train the network would result though in a slower and biased learning. Besides, this way of working is better for learning real-world experience, where there are infinit different states, as the experience gainend in previous steps will be used multiple times later to train the network.
+			The answer to this question is that Reinforcement Learning Networks converge really slowly and variance between consecutive steps is really low. Using consecutive experiences to train the network would result though in a slower and biased learning. Besides, this way of working is better for learning real-world experience, where there are infinite different states, as the experience gained in previous steps will be used multiple times later to train the network.		
 
 
 		\subsubsection{Bellman's Equation}
+			As commented before, Deep Reinforcement Learning uses Neural Networks to compute the q-values of each action. The optimal value of these q-values is represented by the Bellman's Equation and is shown below:
+			
 			\begin{gather*}
-				q_*(s,a) = E[ R_{t+1} + \gamma max(q_*(s', a' )]
+				q_*(s,a) = E[ R_t + \gamma max(q_*(s', a' )]
 			\end{gather*}
 			
-			Suppose we have some arbitrary deep neural network that accepts states from a given environment as input. For each given state input, the network outputs estimated Q-values for each action that can be taken from that state. The objective of this network is to approximate the optimal Q-function, and remember that the optimal Q-function will satisfy the Bellman equation that we covered previously:
-
-  
-With this in mind, the loss from the network is calculated by comparing the outputted Q-values to the target Q-values from the right hand side of the Bellman equation, and as with any network, the objective here is to minimize this loss.
-
-
-After the loss is calculated, the weights within the network are updated via SGD and backpropagation, again, just like with any other typical network. This process is done over and over again for each state in the environment until we sufficiently minimize the loss and get an approximate optimal Q-function.
-
-So, take a second now to think about how we previously used the Bellman equation to compute and update Q-values in our Q-table in order to find the optimal Q-function. Now, with deep Q-learning, our network will make use of the Bellman equation to estimate the Q-values to find the optimal Q-function. So, we’re still solving the same general problem here, just with a different algorithm. Rather than making use of value iteration to solve the problem, we’re now using a deep neural network.
+			As we can see in the equation, the optimal value depends in both the reward of the action taken and the maximum optimal q-value of the next action. In real life it is impossible to compute this value, because we would be an infinite loop. However, as the most important parameter of the formula is the expected reward ($q_*(s', a' )$ is multiplied by the discount factor $\gamma$), we can simply use the next action q-value and it will be a good approximation. The formula would stay as follows:
+			
+			\begin{gather*}
+				q_*(s,a) = E[ R_t + \gamma max(q(s', a' )]
+			\end{gather*}
+		
+			With this new formula we will be able to compute the optimal q-value for each experience stored in the Replay Memory (initial state, action, final state and reward). It is important to have in mind for this process that the optimal q-value can only be computed if the action has actually been taken, because we don't know the Reward of non taken actions. But, anyway, why do we need to compute the optimal q-value?
+			
+			To answer this question, lets take a look to the training process of the neural network:
+			
+			\begin{enumerate}
+				\item the agent decide which action to take using the policy-network. (action with highest q-value)
+				\item The agent takes the action and receives a reward from the environment
+				\item The agent stores all the experience in the Replay Memory
+				\item The training process is started:
+				\begin{enumerate}
+					\item A random batch of experiences is taken from the Replay Memory
+					\item For all these experiences, its optimal q-value is calculates using the modified Bellman's Equation and target-network
+					\item For all these experiences, the actual q-value is calculated using the policy-network
+					\item For all these experiences, the loss is calculated as the difference of both values
+					\item We use the Neural network optimizer to back-propagate the loss to all the weights
+				\end{enumerate}
+			\end{enumerate}
+		
+			So, to answer the previous question, we need to compute the\textbf{ optimal q-values in order to calculate the loss} of the neural network for each action taken and train, though, the algorithm.
+			
+			Retaking here the question answered before about why we needed Replay Memory module, one important reason is that one action taken in the initial steps of the training will affect differently to the neural network in this moment than later, when the network is already trained, and its q-value is though more similar to the optimal q-value. Replay Memory technique allow us to use this information gathered in any step of the training, during a step where the network is more trained.
+			
 		
 		\subsubsection{Target and Policy Networks}
+			In the previous step, we talk about two different networks: policy and target. The target network comes to solve a stability problem of the DRL training. In the next paragraphs I will explain the problem and how target network can help to solve it.
+			
+			Having in mind the way we calculate the loss of the neural network in the previous section we can realize that we have to pass information through the network twice. Just to remember:
+			
+			\begin{gather*}
+				loss = R_t + \gamma max(q(s_{t+1}, a_{t+1})) - q(s_t, a_t)
+			\end{gather*}
 		
+			As a spoiler, I can say that $q(s_{t+1}$ and $q(s_t, a_t)$ will not be calculated with the same network. But.. why?
+			
+			Let's see what could happen if we calculated both of the values with the same network. If we used the same network, we would calculate the loss of the neural network as the difference between two consecutive 
+			
+			
+			
+			
+			
+			
+			
+			We do the first pass to calculate the Q-value for the relevant action, and then we do a second pass in order to calculate the target Q-value for this same action. Our objective is to get the Q-value to approximate the target Q-value.
+			
+			Remember, we don't know ahead of time what the target Q-value even is, so we attempt to approximate it with the network. This second pass occurs using the same weights in the network as the first pass.
+			
+			
+			Given this, when our weights update, our outputted Q-values will update, but so will our target Q-values since the targets are calculated using the same weights. So, our Q-values will be updated with each iteration to move closer to the target Q-values, but the target Q-values will also be moving in the same direction.
+			
+			As Andong put it in the comments of the last video, this makes the optimization appear to be chasing its own tail, which introduces instability. As our Q-values move closer and closer to their targets, the targets continue to move further and further because we're using the same network to calculate both of these values.
+			
+			
+			Well, here's a perfect time to introduce the second network that we mentioned earlier. Rather than doing a second pass to the policy network to calculate the target Q-values, we instead obtain the target Q-values from a completely separate network, appropriately called the target network.
+			
+			The target network is a clone of the policy network. Its weights are frozen with the original policy network’s weights, and we update the weights in the target network to the policy network’s new weights every certain amount of time steps. This certain amount of time steps can be looked at as yet another hyperparameter that we'll have to test out to see what works best for us.
+			
+			
+			So now, the first pass still occurs with the policy network. The second pass, however, for the following state occurs with the target network. With this target network, we're able to obtain the  Q-value for the next state, and again, plug this value into the Bellman equation in order to calculate the target Q-value for the first state.
+			
+			
+			This is all we use the target network for — To find the value of this  term so that we can calculate the target Q-value for any state passed to the policy network.
+			As it turns out, this removes much of the instability introduced by using only one network to calculate both the Q-values, as well as the target Q-values. We now have something fixed, i.e. fixed Q-targets, that we want our policy network to approximate. So, we no longer have the dog-chasing-it's-tail problem.
+			
+			As mentioned though, these values don't stay completely fixed the entire time. After  amount of time steps, we'll update the weights in the target network with the weights from our policy network, which will in turn, update the target Q-values with respect to what it's learned over those past time steps. This will cause the policy network to start to approximate the updated targets.
 		
 		
 		

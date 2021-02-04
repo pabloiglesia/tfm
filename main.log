@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.2)  1 FEB 2021 19:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.2)  2 FEB 2021 22:10
 entering extended mode
 **./main.tex
 (main.tex
@@ -1541,7 +1541,7 @@ Package pdftex.def Info: Images/DeepQ-Network.jpg  used on input line 89.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] [10 <./Images/DeepQ-Network.jpg>] [11] [12]) [13]
+[9] [10 <./Images/DeepQ-Network.jpg>] [11] [12] [13] [14] [15] [16]) [17]
 \openout2 = `Chapters/4-definition-of-the-project.aux'.
 
 
@@ -1569,28 +1569,28 @@ Overfull \hbox (14.67596pt too wide) in paragraph at lines 13--13
 \OT1/cmr/m/n/12 proyecto[]  
  []
 
-[14
+[18
 
 
 
 ]
-<Images/methodology.png, id=347, 670.6656pt x 191.7564pt>
+<Images/methodology.png, id=373, 670.6656pt x 191.7564pt>
 File: Images/methodology.png Graphic file (type png)
 <use Images/methodology.png>
 Package pdftex.def Info: Images/methodology.png  used on input line 33.
 (pdftex.def)             Requested size: 355.51817pt x 101.64795pt.
- [15]
-<Images/planning1.png, id=356, 599.23875pt x 232.61906pt>
+ [19]
+<Images/planning1.png, id=382, 599.23875pt x 232.61906pt>
 File: Images/planning1.png Graphic file (type png)
 <use Images/planning1.png>
 Package pdftex.def Info: Images/planning1.png  used on input line 45.
 (pdftex.def)             Requested size: 355.51817pt x 138.01073pt.
-<Images/planning2.png, id=357, 558.58687pt x 292.84406pt>
+<Images/planning2.png, id=383, 558.58687pt x 292.84406pt>
 File: Images/planning2.png Graphic file (type png)
 <use Images/planning2.png>
 Package pdftex.def Info: Images/planning2.png  used on input line 53.
 (pdftex.def)             Requested size: 355.51817pt x 186.38734pt.
-<Images/planning3.png, id=358, 662.475pt x 242.40562pt>
+<Images/planning3.png, id=384, 662.475pt x 242.40562pt>
 File: Images/planning3.png Graphic file (type png)
 <use Images/planning3.png>
 Package pdftex.def Info: Images/planning3.png  used on input line 61.
@@ -1615,13 +1615,13 @@ Overfull \hbox (15.78568pt too wide) in paragraph at lines 66--66
 \OT1/cmr/m/n/12 supuesto[]  
  []
 
-) [16 <./Images/methodology.png> <./Images/planning1.png>] [17 <./Images/planni
+) [20 <./Images/methodology.png> <./Images/planning1.png>] [21 <./Images/planni
 ng2.png> <./Images/planning3.png>]
 \openout2 = `Chapters/5-developed-system.aux'.
 
  (Chapters/5-developed-system.tex
 Chapter 5.
-) [18
+) [22
 
 
 
@@ -1630,7 +1630,7 @@ Chapter 5.
 
  (Chapters/6-results-analysis.tex
 Chapter 6.
-) [19
+) [23
 
 
 
@@ -1639,11 +1639,11 @@ Chapter 6.
 
  (Chapters/7-conclusions-and-future-work.tex
 Chapter 7.
-) [20
+) [24
 
 
 
-] [21
+] [25
 
 
 ]
@@ -1671,14 +1671,14 @@ LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmtt.fd
 File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-[22
+[26
 
-]) [23] (D:/Proyectos/robot_controller/src/Robot.py [24] [25] [26] [27]
-[28] [29]) (D:/Proyectos/ai_manager/src/ai_manager/main.py [30]) [31]
-(D:/Proyectos/ai_manager/src/ai_manager/RLAlgorithm.py [32] [33] [34] [35]
-[36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48])
-(D:/Proyectos/ai_manager/src/ai_manager/Environment.py [49] [50] [51])
-(D:/Proyectos/ai_manager/src/ai_manager/ImageController.py [52] [53])) [54]
+]) [27] (D:/Proyectos/robot_controller/src/Robot.py [28] [29] [30] [31]
+[32] [33]) (D:/Proyectos/ai_manager/src/ai_manager/main.py [34] [35])
+(D:/Proyectos/ai_manager/src/ai_manager/RLAlgorithm.py [36] [37] [38] [39]
+[40] [41] [42] [43] [44] [45] [46] [47] [48] [49] [50] [51] [52]) [53]
+(D:/Proyectos/ai_manager/src/ai_manager/Environment.py [54] [55]) [56]
+(D:/Proyectos/ai_manager/src/ai_manager/ImageController.py [57])) [58]
 
 Package biblatex Warning: No driver for entry type 'video'.
 (biblatex)                Using fallback driver on input line 191.
@@ -1697,11 +1697,11 @@ Overfull \hbox (24.68712pt too wide) in paragraph at lines 191--191
  : / / deeplizard .
  []
 
-[55
+[59
 
 
 
-] [56]
+] [60]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
  (main.aux (Chapters/1-introduction.aux)
@@ -1719,10 +1719,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 194.
  ) 
 Here is how much of TeX's memory you used:
- 44488 strings out of 481199
- 1003615 string characters out of 2905595
- 2099408 words of memory out of 3000000
- 57990 multiletter control sequences out of 15000+200000
+ 44531 strings out of 481199
+ 1004143 string characters out of 2905595
+ 2103414 words of memory out of 3000000
+ 58010 multiletter control sequences out of 15000+200000
  547595 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,12n,98p,1390b,2576s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1752,9 +1752,9 @@ c/amsfonts/cm/cmsy8.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/cm/cmti12.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/
 fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/pablo/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (63 pages, 1614526 bytes).
+Output written on main.pdf (67 pages, 1629320 bytes).
 PDF statistics:
- 2077 PDF objects out of 2487 (max. 8388607)
- 1307 named destinations out of 1440 (max. 500000)
+ 2117 PDF objects out of 2487 (max. 8388607)
+ 1330 named destinations out of 1440 (max. 500000)
  378 words of extra memory for PDF output out of 10000 (max. 10000000)
 
