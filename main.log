@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.2)  5 FEB 2021 00:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.2)  7 FEB 2021 21:05
 entering extended mode
 **./main.tex
 (main.tex
@@ -1274,36 +1274,44 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/capt-of\capt-of.sty
 Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 111.
+(C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count472
+\float@exts=\toks48
+\float@box=\box83
+\@float@everytoks=\toks49
+\@floatcapt=\box84
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 112.
 
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count472
-\@quotereset=\count473
+\@quotelevel=\count473
+\@quotereset=\count474
 (main.aux (Chapters/1-introduction.aux)
 (Chapters/2-description-of-technologies.aux) (Chapters/3-state-of-the-art.aux)
 (Chapters/4-definition-of-the-project.aux) (Chapters/5-developed-system.aux)
 (Chapters/6-results-analysis.aux) (Chapters/7-conclusions-and-future-work.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1338,8 +1346,8 @@ LaTeX Font Info:    ... okay on input line 115.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box83
-Package hyperref Info: Link coloring ON on input line 115.
+\AtBeginShipoutBox=\box85
+Package hyperref Info: Link coloring ON on input line 116.
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1350,31 +1358,31 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count474
+\c@section@level=\count475
 )
-LaTeX Info: Redefining \ref on input line 115.
-LaTeX Info: Redefining \pageref on input line 115.
-LaTeX Info: Redefining \nameref on input line 115.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count475
+\c@lstlisting=\count476
 
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count476
+\scratchcounter=\count477
 \scratchdimen=\dimen325
-\scratchbox=\box84
-\nofMPsegments=\count477
-\nofMParguments=\count478
-\everyMPshowfont=\toks48
-\MPscratchCnt=\count479
+\scratchbox=\box86
+\nofMPsegments=\count478
+\nofMParguments=\count479
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count480
 \MPscratchDim=\dimen326
-\MPnumerator=\count480
-\makeMPintoPDFobject=\count481
-\everyMPtoPDFconversion=\toks49
+\MPnumerator=\count481
+\makeMPintoPDFobject=\count482
+\everyMPtoPDFconversion=\toks51
 )
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -1404,20 +1412,20 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 115.
-Package biblatex Info: Reference segment=0 on input line 115.
+Package biblatex Info: Reference section=0 on input line 116.
+Package biblatex Info: Reference segment=0 on input line 116.
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 115.
+ on input line 116.
 
 
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 115.
+loading the todonotes package. on input line 116.
 
 
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-b
@@ -1428,22 +1436,22 @@ Dictionary: translator-basic-dictionary, Language: English
 ations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 115
+LaTeX Font Info:    Trying to load font information for U+msa on input line 116
 .
 
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 115
+LaTeX Font Info:    Trying to load font information for U+msb on input line 116
 .
 
 (C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<LogoUniversidadBN.pdf, id=142, 304.85693pt x 276.25308pt>
+<LogoUniversidadBN.pdf, id=162, 304.85693pt x 276.25308pt>
 File: LogoUniversidadBN.pdf Graphic file (type pdf)
 <use LogoUniversidadBN.pdf>
-Package pdftex.def Info: LogoUniversidadBN.pdf  used on input line 124.
+Package pdftex.def Info: LogoUniversidadBN.pdf  used on input line 125.
 (pdftex.def)             Requested size: 250.95476pt x 227.41418pt.
 
 [1
@@ -1466,11 +1474,11 @@ adBN.pdf>] [2
 
  [6
 
-] (main.lot)
+] [7] (main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [7
+ [8
 
 ]
 \openout2 = `Chapters/1-introduction.aux'.
@@ -1484,7 +1492,7 @@ Chapter 1.
 
 
 ]
-<Images/UR_conveyor.png, id=239, 756.57657pt x 509.65407pt>
+<Images/UR_conveyor.png, id=288, 756.57657pt x 509.65407pt>
 File: Images/UR_conveyor.png Graphic file (type png)
 <use Images/UR_conveyor.png>
 Package pdftex.def Info: Images/UR_conveyor.png  used on input line 16.
@@ -1496,12 +1504,19 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[2 <./Images/UR_conveyor.png>]) [3]
+[2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.25 \section{Project Motivation}
+                                  <./Images/UR_conveyor.png>]) [3]
 \openout2 = `Chapters/2-description-of-technologies.aux'.
 
- (Chapters/2-description-of-technologies.tex
+
+(Chapters/2-description-of-technologies.tex
 Chapter 2.
-<Images/logos/ros.png, id=250, 1204.5pt x 321.2pt>
+<Images/logos/ros.png, id=299, 1204.5pt x 321.2pt>
 File: Images/logos/ros.png Graphic file (type png)
 <use Images/logos/ros.png>
 Package pdftex.def Info: Images/logos/ros.png  used on input line 9.
@@ -1511,7 +1526,7 @@ Package pdftex.def Info: Images/logos/ros.png  used on input line 9.
 
 
  <./Images/logos/ros.png>]
-<Images/logos/pytorch.jpeg, id=257, 1204.5pt x 328.22626pt>
+<Images/logos/pytorch.jpeg, id=306, 1204.5pt x 328.22626pt>
 File: Images/logos/pytorch.jpeg Graphic file (type jpg)
 <use Images/logos/pytorch.jpeg>
 Package pdftex.def Info: Images/logos/pytorch.jpeg  used on input line 40.
@@ -1521,7 +1536,7 @@ Package pdftex.def Info: Images/logos/pytorch.jpeg  used on input line 40.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5]
-<Images/logos/arduino.png, id=262, 513.92pt x 264.99pt>
+<Images/logos/arduino.png, id=312, 513.92pt x 264.99pt>
 File: Images/logos/arduino.png Graphic file (type png)
 <use Images/logos/arduino.png>
 Package pdftex.def Info: Images/logos/arduino.png  used on input line 59.
@@ -1531,45 +1546,45 @@ Package pdftex.def Info: Images/logos/arduino.png  used on input line 59.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6 <./Images/logos/pytorch.jpeg>]
-<Images/logos/github.png, id=268, 2609.75pt x 625.33624pt>
+<Images/logos/github.png, id=317, 2609.75pt x 625.33624pt>
 File: Images/logos/github.png Graphic file (type png)
 <use Images/logos/github.png>
 Package pdftex.def Info: Images/logos/github.png  used on input line 70.
 (pdftex.def)             Requested size: 292.77629pt x 70.15167pt.
  [7 <./Images/logos/arduino.png> <./Images/logos/github.png>]
-<Images/logos/cuda.jpg, id=275, 225.84375pt x 121.20282pt>
+<Images/logos/cuda.jpg, id=324, 225.84375pt x 121.20282pt>
 File: Images/logos/cuda.jpg Graphic file (type jpg)
 <use Images/logos/cuda.jpg>
 Package pdftex.def Info: Images/logos/cuda.jpg  used on input line 80.
 (pdftex.def)             Requested size: 292.77629pt x 157.14381pt.
  [8 <./Images/logos/cuda.jpg>]
-<Images/logos/moveit.png, id=280, 535.91138pt x 99.40852pt>
+<Images/logos/moveit.png, id=329, 535.91138pt x 99.40852pt>
 File: Images/logos/moveit.png Graphic file (type png)
 <use Images/logos/moveit.png>
 Package pdftex.def Info: Images/logos/moveit.png  used on input line 96.
 (pdftex.def)             Requested size: 292.77629pt x 54.30777pt.
-<Images/logos/ur.png, id=281, 1650.165pt x 275.0275pt>
+<Images/logos/ur.png, id=330, 1650.165pt x 275.0275pt>
 File: Images/logos/ur.png Graphic file (type png)
 <use Images/logos/ur.png>
 Package pdftex.def Info: Images/logos/ur.png  used on input line 107.
 (pdftex.def)             Requested size: 292.77629pt x 48.79358pt.
  [9 <./Images/logos/moveit.png> <./Images/logos/ur.png>]
-<Images/logos/ur3.jpg, id=288, 903.375pt x 551.05875pt>
+<Images/logos/ur3.jpg, id=337, 903.375pt x 551.05875pt>
 File: Images/logos/ur3.jpg Graphic file (type jpg)
 <use Images/logos/ur3.jpg>
-Package pdftex.def Info: Images/logos/ur3.jpg  used on input line 123.
+Package pdftex.def Info: Images/logos/ur3.jpg  used on input line 125.
 (pdftex.def)             Requested size: 292.77629pt x 178.59586pt.
-<Images/logos/anaconda.png, id=289, 742.775pt x 250.9375pt>
+<Images/logos/anaconda.png, id=338, 742.775pt x 250.9375pt>
 File: Images/logos/anaconda.png Graphic file (type png)
 <use Images/logos/anaconda.png>
-Package pdftex.def Info: Images/logos/anaconda.png  used on input line 135.
+Package pdftex.def Info: Images/logos/anaconda.png  used on input line 137.
 (pdftex.def)             Requested size: 292.77629pt x 98.91054pt.
  [10 <./Images/logos/ur3.jpg> <./Images/logos/anaconda.png (PNG copy)>]) [11]
 \openout2 = `Chapters/3-state-of-the-art.aux'.
 
  (Chapters/3-state-of-the-art.tex
 Chapter 3.
-<Images/FANUC_DNN.png, id=300, 594.72188pt x 260.47313pt>
+<Images/FANUC_DNN.png, id=350, 594.72188pt x 260.47313pt>
 File: Images/FANUC_DNN.png Graphic file (type png)
 <use Images/FANUC_DNN.png>
 Package pdftex.def Info: Images/FANUC_DNN.png  used on input line 13.
@@ -1582,14 +1597,27 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 
 
 
-] [13 <./Images/FANUC_DNN.png>] [14]
-<Images/Q-Matrix.png, id=328, 242.40562pt x 188.95593pt>
+] [13pdfTeX warning (ext4): destination with the same identifier (name{figure.3
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.30 				\item[\textendash]
+                           \textbf{Rewards (R):} Each time an action is perf...
+ <./Images/FANUC_DNN.png>] [14]
+<Images/Q-Matrix.png, id=377, 242.40562pt x 188.95593pt>
 File: Images/Q-Matrix.png Graphic file (type png)
 <use Images/Q-Matrix.png>
 Package pdftex.def Info: Images/Q-Matrix.png  used on input line 68.
 (pdftex.def)             Requested size: 292.77629pt x 228.24814pt.
- [15 <./Images/Q-Matrix.png>]
-<Images/DeepQ-Network.jpg, id=339, 1924.18875pt x 940.51375pt>
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.76 			
+         <./Images/Q-Matrix.png>]
+<Images/DeepQ-Network.jpg, id=388, 1924.18875pt x 940.51375pt>
 File: Images/DeepQ-Network.jpg Graphic file (type jpg)
 <use Images/DeepQ-Network.jpg>
 Package pdftex.def Info: Images/DeepQ-Network.jpg  used on input line 89.
@@ -1598,105 +1626,236 @@ Package pdftex.def Info: Images/DeepQ-Network.jpg  used on input line 89.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16] [17 <./Images/DeepQ-Network.jpg>] [18] [19] [20] [21] [22]
+[16] [17pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.3.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.113 			
+          <./Images/DeepQ-Network.jpg>] [18] [19] [20] [21] [22]
 
 LaTeX Warning: Citation 'fig:training' on page 23 undefined on input line 240.
 
-<Images/Training.png, id=397, 499.8675pt x 346.29375pt>
+<Images/Training.png, id=446, 499.8675pt x 346.29375pt>
 File: Images/Training.png Graphic file (type png)
 <use Images/Training.png>
-Package pdftex.def Info: Images/Training.png  used on input line 248.
+Package pdftex.def Info: Images/Training.png  used on input line 244.
 (pdftex.def)             Requested size: 292.77629pt x 202.832pt.
-[23] [24 <./Images/Training.png>]) [25]
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.259 		
+         <./Images/Training.png>] [24]) [25]
 \openout2 = `Chapters/4-definition-of-the-project.aux'.
 
 
 (Chapters/4-definition-of-the-project.tex
 Chapter 4.
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 13.
-
-Overfull \hbox (9.68019pt too wide) in paragraph at lines 13--13
-[][][]\OT1/cmr/m/n/12 Revisar 
- []
-
-
-Overfull \hbox (14.67596pt too wide) in paragraph at lines 13--13
-\OT1/cmr/m/n/12 proyecto[]  
- []
-
-
-Overfull \hbox (9.68019pt too wide) in paragraph at lines 13--13
-[][][]\OT1/cmr/m/n/12 Revisar 
- []
-
-
-Overfull \hbox (14.67596pt too wide) in paragraph at lines 13--13
-\OT1/cmr/m/n/12 proyecto[]  
- []
-
 [26
 
 
 
 ]
-<Images/methodology.png, id=425, 670.6656pt x 191.7564pt>
+<Images/methodology.png, id=473, 670.6656pt x 191.7564pt>
 File: Images/methodology.png Graphic file (type png)
 <use Images/methodology.png>
 Package pdftex.def Info: Images/methodology.png  used on input line 33.
 (pdftex.def)             Requested size: 355.51817pt x 101.64795pt.
  [27]
-<Images/planning1.png, id=434, 599.23875pt x 232.61906pt>
+<Images/planning1.png, id=482, 599.23875pt x 232.61906pt>
 File: Images/planning1.png Graphic file (type png)
 <use Images/planning1.png>
 Package pdftex.def Info: Images/planning1.png  used on input line 45.
 (pdftex.def)             Requested size: 355.51817pt x 138.01073pt.
-<Images/planning2.png, id=435, 558.58687pt x 292.84406pt>
+<Images/planning2.png, id=483, 558.58687pt x 292.84406pt>
 File: Images/planning2.png Graphic file (type png)
 <use Images/planning2.png>
-Package pdftex.def Info: Images/planning2.png  used on input line 53.
+Package pdftex.def Info: Images/planning2.png  used on input line 52.
 (pdftex.def)             Requested size: 355.51817pt x 186.38734pt.
-<Images/planning3.png, id=436, 662.475pt x 242.40562pt>
+<Images/planning3.png, id=484, 662.475pt x 242.40562pt>
 File: Images/planning3.png Graphic file (type png)
 <use Images/planning3.png>
-Package pdftex.def Info: Images/planning3.png  used on input line 61.
+Package pdftex.def Info: Images/planning3.png  used on input line 59.
 (pdftex.def)             Requested size: 355.51817pt x 130.08704pt.
+ [28pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+1}) has been already used, duplicate ignored
 
-Overfull \hbox (6.83855pt too wide) in paragraph at lines 66--66
-[][][]\OT1/cmr/m/n/12 A~nadir 
- []
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 				\captionof{table}{Project's Budget}
+                                            pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.4.2}) has been already used, duplicate ig
+nored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 				\captionof{table}{Project's Budget}
+                                             <./Images/methodology.png> <./Imag
+es/planning1.png>] [29pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.4.3}) has been already used, duplicate ignored
 
-Overfull \hbox (15.78568pt too wide) in paragraph at lines 66--66
-\OT1/cmr/m/n/12 supuesto[]  
- []
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 				\captionof{table}{Project's Budget}
+                                            pdfTeX warning (ext4): destination 
+with the same identifier (name{figure.4.4}) has been already used, duplicate ig
+nored
 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 				\captionof{table}{Project's Budget}
+                                             <./Images/planning2.png> <./Images
+/planning3.png>]) [30pdfTeX warning (ext4): destination with the same identifie
+r (name{table.4.1}) has been already used, duplicate ignored
 
-Overfull \hbox (6.83855pt too wide) in paragraph at lines 66--66
-[][][]\OT1/cmr/m/n/12 A~nadir 
- []
-
-
-Overfull \hbox (15.78568pt too wide) in paragraph at lines 66--66
-\OT1/cmr/m/n/12 supuesto[]  
- []
-
-) [28 <./Images/methodology.png> <./Images/planning1.png>] [29 <./Images/planni
-ng2.png> <./Images/planning3.png>]
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.175 ...ude{Chapters/4-definition-of-the-project}
+                                                   % Definition of the Project]
 \openout2 = `Chapters/5-developed-system.aux'.
 
- (Chapters/5-developed-system.tex
+(Chapters/5-developed-system.tex
 Chapter 5.
-) [30
+<Images/pieces.png, id=503, 298.716pt x 231.86626pt>
+File: Images/pieces.png Graphic file (type png)
+<use Images/pieces.png>
+Package pdftex.def Info: Images/pieces.png  used on input line 9.
+(pdftex.def)             Requested size: 292.77629pt x 227.2769pt.
+[31
 
 
 
-]
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.19 			\item[\textendash]
+                          Environment <./Images/pieces.png>]
+<Images/Imagen Arquitectura.jpg, id=511, 947.7006pt x 548.2884pt>
+File: Images/Imagen Arquitectura.jpg Graphic file (type jpg)
+<use Images/Imagen Arquitectura.jpg>
+Package pdftex.def Info: Images/Imagen Arquitectura.jpg  used on input line 28.
+
+(pdftex.def)             Requested size: 376.42575pt x 217.78046pt.
+<Images/Imagen Arquitectura II.jpg, id=512, 694.2738pt x 542.025pt>
+File: Images/Imagen Arquitectura II.jpg Graphic file (type jpg)
+<use Images/Imagen Arquitectura II.jpg>
+Package pdftex.def Info: Images/Imagen Arquitectura II.jpg  used on input line 
+36.
+(pdftex.def)             Requested size: 376.42575pt x 293.8801pt.
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.40 	
+       <./Images/Imagen Arquitectura.jpg>] [33pdfTeX warning (ext4): destinatio
+n with the same identifier (name{figure.5.3}) has been already used, duplicate 
+ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.52 				\item[\textendash]
+                           \textbf{EN2}: The box where the agent has to plac...
+ <./Images/Imagen Arquitectura II.jpg>]
+<Images/Architecture.png, id=521, 727.518pt x 409.0482pt>
+File: Images/Architecture.png Graphic file (type png)
+<use Images/Architecture.png>
+Package pdftex.def Info: Images/Architecture.png  used on input line 76.
+(pdftex.def)             Requested size: 292.77629pt x 164.61502pt.
+ [34]
+<Images/ArchitectureI.png, id=527, 442.7742pt x 251.0178pt>
+File: Images/ArchitectureI.png Graphic file (type png)
+<use Images/ArchitectureI.png>
+Package pdftex.def Info: Images/ArchitectureI.png  used on input line 87.
+(pdftex.def)             Requested size: 292.77629pt x 165.98633pt.
+ [35pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.91 	
+       <./Images/Architecture.png>]
+<Images/ArchitectureII.png, id=535, 442.7742pt x 408.0846pt>
+File: Images/ArchitectureII.png Graphic file (type png)
+<use Images/ArchitectureII.png>
+Package pdftex.def Info: Images/ArchitectureII.png  used on input line 100.
+(pdftex.def)             Requested size: 292.77629pt x 269.84726pt.
+ [36pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.104 	
+        <./Images/ArchitectureI.png>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
+08.
+
+(C:\Users\pablo\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/bx/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 108.
+
+[37pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.111 		\end{itemize}
+                      <./Images/ArchitectureII.png>]
+<Images/ArchitectureIII.png, id=548, 633.0852pt x 408.0846pt>
+File: Images/ArchitectureIII.png Graphic file (type png)
+<use Images/ArchitectureIII.png>
+Package pdftex.def Info: Images/ArchitectureIII.png  used on input line 115.
+(pdftex.def)             Requested size: 292.77629pt x 188.72371pt.
+ [38pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.127 		
+         <./Images/ArchitectureIII.png>]
+<Images/ArchitectureIV.png, id=555, 727.518pt x 408.5664pt>
+File: Images/ArchitectureIV.png Graphic file (type png)
+<use Images/ArchitectureIV.png>
+Package pdftex.def Info: Images/ArchitectureIV.png  used on input line 149.
+(pdftex.def)             Requested size: 292.77629pt x 164.42113pt.
+ [39]
+<Images/NodeInteraction.png, id=561, 1054.6602pt x 819.06pt>
+File: Images/NodeInteraction.png Graphic file (type png)
+<use Images/NodeInteraction.png>
+Package pdftex.def Info: Images/NodeInteraction.png  used on input line 162.
+(pdftex.def)             Requested size: 418.25368pt x 324.81868pt.
+ [40pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.166 	
+        <./Images/ArchitectureIV.png>] [41pdfTeX warning (ext4): destination wi
+th the same identifier (name{figure.5.9}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.171 		T
+         his is a really simplified flow, but its a very good graphical way ...
+ <./Images/NodeInteraction.png>] [42]
+Overfull \hbox (6.9809pt too wide) in paragraph at lines 200--201
+[]\OT1/cmr/bx/it/12 is[]terminal[]state(coordinates, ob-ject[]gripped)\OT1/cmr/
+m/n/12 , which re-turns a boolean
+ []
+
+[43] [44] [45] [46]) [47]
 \openout2 = `Chapters/6-results-analysis.aux'.
 
  (Chapters/6-results-analysis.tex
 Chapter 6.
-) [31
+) [48
 
 
 
@@ -1705,44 +1864,44 @@ Chapter 6.
 
  (Chapters/7-conclusions-and-future-work.tex
 Chapter 7.
-) [32
+) [49
 
 
 
 ]
 
 Package biblatex Warning: No driver for entry type 'video'.
-(biblatex)                Using fallback driver on input line 192.
+(biblatex)                Using fallback driver on input line 193.
 
 
-Overfull \hbox (2.37486pt too wide) in paragraph at lines 192--192
+Overfull \hbox (2.37486pt too wide) in paragraph at lines 193--193
 []\OT1/cmr/m/n/12 Preferred Net-works, Inc. \OT1/cmr/m/it/12 Bin-picking Robot 
 Deep Learn-ing\OT1/cmr/m/n/12 . 2015. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : [][
 ]$\OT1/cmtt/m/n/12 https :
  []
 
 
-Overfull \hbox (24.68712pt too wide) in paragraph at lines 192--192
+Overfull \hbox (24.68712pt too wide) in paragraph at lines 193--193
 []\OT1/cmr/m/it/12 Reinforcement Learn-ing - Goal Ori-ented In-tel-li-gence\OT1
 /cmr/m/n/12 . \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12 : [][]$\OT1/cmtt/m/n/12 https
  : / / deeplizard .
  []
 
-[33
+[50
 
 
 
-] [34]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
+] [51]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 196.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 196.
  (main.aux (Chapters/1-introduction.aux)
 (Chapters/2-description-of-technologies.aux) (Chapters/3-state-of-the-art.aux)
 (Chapters/4-definition-of-the-project.aux) (Chapters/5-developed-system.aux)
 (Chapters/6-results-analysis.aux) (Chapters/7-conclusions-and-future-work.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 196.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 196.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 630791AFB79F439B2BE61D0935E358A5;1710.
+(rerunfilecheck)             Checksum: CE379CABF59472A5D891F578CC5B9316;2046.
 
 LaTeX Warning: There were undefined references.
 
@@ -1754,42 +1913,43 @@ Package biblatex Warning: Please (re)run Biber on the file:
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 196.
  ) 
 Here is how much of TeX's memory you used:
- 42561 strings out of 481199
- 975774 string characters out of 2905595
- 1835278 words of memory out of 3000000
- 57273 multiletter control sequences out of 15000+200000
- 547130 words of font info for 72 fonts, out of 3000000 for 9000
+ 42648 strings out of 481199
+ 976922 string characters out of 2905595
+ 1834930 words of memory out of 3000000
+ 57311 multiletter control sequences out of 15000+200000
+ 547489 words of font info for 73 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,12n,98p,1390b,2389s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,13n,98p,1390b,2389s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbsy10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cmextra/cmbsy8.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTe
 X/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/pablo/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/pablo/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pablo/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/User
-s/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb>
-<C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-mib10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cmextra/cmmib8.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pablo/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pablo/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pablo/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/pablo
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Us
-ers/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.p
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/pablo/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/pablo
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Us
+ers/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.p
 fb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmti12.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (41 pages, 1837696 bytes).
+/cmmi8.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmmib10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cmextra/cmmib8.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTe
+X/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pablo/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pablo/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pablo/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pab
+lo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/
+Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12
+.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy8.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmti12.pfb><C:/Users/pablo/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on main.pdf (59 pages, 2942445 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
- 428 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 738 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 513 words of extra memory for PDF output out of 10000 (max. 10000000)
 

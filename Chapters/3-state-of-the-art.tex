@@ -239,16 +239,16 @@
 			
 			This training can also be explained with \autocite{fig:training}, where the Pool is the Replay Memory that stores the sample (experiences) from real interaction with the environment and feeds the training node of random sample of experiences.
 			
-			Then, we can see that we use the Q-Network (policy network) to predict actions, but also to calculate the q-value of Replay Memory's batch. Then, we use the target network to predict action-value of state s1 with the predicted action in Q estimation Network, andthis network is updated in a low rate.
-			
-			Finally, the action taken in the Dynamic Environment can be predicted by the Neural Network or Randomly chosen (Stochastic search). This is the way of representing epsiolon-Greedy Strategy. 
-			
 			\begin{figure}
 				\centering
 				\includegraphics[width=0.7\linewidth]{Images/Training}
 				\caption[RL Training]{Reinforcement Learning Training Summary}
 				\label{fig:training}
 			\end{figure}
+		
+			Then, we can see that we use the Q-Network (policy network) to predict actions, but also to calculate the q-value of Replay Memory's batch. Then, we use the target network to predict action-value of state s1 with the predicted action in Q estimation Network, andthis network is updated in a low rate.
+			
+			Finally, the action taken in the Dynamic Environment can be predicted by the Neural Network or Randomly chosen (Stochastic search). This is the way of representing epsiolon-Greedy Strategy. 
 				
 			
 		
@@ -276,7 +276,6 @@
 		
 		Another problem that can be found in our project is that, as objects are randomly placed, the environment that the agent will have to face will be completely different each time. In fact, the robot can interact with the environment, as it can move the pieces trying to pick them, so we are facing a dynamic environment RL problem. A good example of a dynamic environment problem is the path planning of a self driven car, where each time the agent takes an action the environment will change and, furthermore, obstacles do not have to be static, but they can also move.
 		
-		%% TODO: Explicar en profundidad (En descripción de las tecnologías)
 		There are multiple examples of articles on this topic, such as the one Xiaoyun Lei, Zhian Zhang, and Peifang Dong published in September 2018 using a DDQN approach to solve it \cite{lei_dynamic_2018}. However, there are other solutions as the one proposed by Marco A. Wiering \cite{wiering_reinforcement_2001}, where he introduces some prior knowledge to the model in order to facilitate the learning. His algorithm had problems generalizing the environment, so he introduced some prior information about the model together with a Model-based RL. This made the algorithm more capable to learn without loosing a lot of trainable capability.
 		
 		%% The task they performed is really different from the one we are implementing, but, as they are using the same robot, most of the problems they found are valid for our project. The solution for these problems will be explained later.
