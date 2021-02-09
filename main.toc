@@ -16,29 +16,48 @@
 \contentsline {subsection}{\numberline {3.0.1}Reinforcement Learning}{13}{subsection.3.0.1}%
 \contentsline {subsubsection}{Markov Decision Process (MD)}{13}{subsubsection*.5}%
 \contentsline {subsubsection}{Q-Learning}{15}{subsubsection*.6}%
-\contentsline {subsection}{\numberline {3.0.2}Deep Reinforcement Learning}{16}{subsection.3.0.2}%
+\contentsline {subsection}{\numberline {3.0.2}Deep Reinforcement Learning}{15}{subsection.3.0.2}%
 \contentsline {subsubsection}{Episodes and Steps}{17}{subsubsection*.7}%
-\contentsline {subsubsection}{Exploration vs Exploitation trade-off}{17}{subsubsection*.8}%
+\contentsline {subsubsection}{Exploration vs Exploitation trade-off}{18}{subsubsection*.8}%
 \contentsline {subsubsection}{Replay Memory}{19}{subsubsection*.9}%
-\contentsline {subsubsection}{Bellman's Equation}{19}{subsubsection*.10}%
+\contentsline {subsubsection}{Bellman's Equation}{20}{subsubsection*.10}%
 \contentsline {subsubsection}{Target and Policy Networks}{21}{subsubsection*.11}%
 \contentsline {subsubsection}{DQL Training}{22}{subsubsection*.12}%
-\contentsline {subsection}{\numberline {3.0.3}Problems of Deep Reinforcement Learning in Real-world}{24}{subsection.3.0.3}%
-\contentsline {chapter}{\numberline {4.}Definition of the Project}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Motivation}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Objectives}{26}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Methodology}{27}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Planning and budget}{28}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Budget}{28}{subsection.4.4.1}%
-\contentsline {chapter}{\numberline {5.}Developed System}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Hardware Architecture}{32}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Logical Architecture}{34}{section.5.2}%
-\contentsline {section}{\numberline {5.3}ai\_manager}{42}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Definition of the problem}{42}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Environment.py}{43}{subsection.5.3.2}%
-\contentsline {subsection}{\numberline {5.3.3}Rewards}{43}{subsection.5.3.3}%
-\contentsline {subsection}{\numberline {5.3.4}Algorithm}{44}{subsection.5.3.4}%
-\contentsline {subsubsection}{RLAlgorithm.py}{45}{subsubsection*.13}%
-\contentsline {chapter}{\numberline {6.}Results Analysis}{48}{chapter.6}%
-\contentsline {chapter}{\numberline {7.}Conclusions and Future Work}{49}{chapter.7}%
-\contentsline {chapter}{Bibliography}{50}{chapter*.14}%
+\contentsline {subsection}{\numberline {3.0.3}Problems of Deep Reinforcement Learning in Real-world}{23}{subsection.3.0.3}%
+\contentsline {chapter}{\numberline {4.}Definition of the Project}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Motivation}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Objectives}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Methodology}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Planning and budget}{29}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Budget}{29}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {5.}Developed System}{32}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Hardware Architecture}{33}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Logical Architecture}{35}{section.5.2}%
+\contentsline {section}{\numberline {5.3}ai\_manager}{43}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Definition of the problem}{43}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Environment.py}{44}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Rewards}{44}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Algorithm}{45}{subsection.5.3.4}%
+\contentsline {subsubsection}{RLAlgorithm.py}{46}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {5.3.5}Training Flow}{48}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Image Model}{50}{subsection.5.3.6}%
+\contentsline {section}{\numberline {5.4}Robot Controller}{51}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Robot.py}{52}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Block Detector}{54}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}Gripper}{55}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Algorithm and System optimization}{59}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Performance}{59}{subsection.5.6.1}%
+\contentsline {subsection}{\numberline {5.6.2}Training}{60}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.6.3}Why to use Block Detector?}{60}{subsection.5.6.3}%
+\contentsline {chapter}{\numberline {6.}Results Analysis}{64}{chapter.6}%
+\contentsline {chapter}{\numberline {7.}Conclusions and Future Work}{65}{chapter.7}%
+\contentsline {part}{Appendix}{66}{part*.20}%
+\contentsline {section}{\numberline {.1}Robot Controller}{67}{section.Alph0.1}%
+\contentsline {subsection}{\numberline {.1.1}main.py}{67}{subsection.Alph0.1.1}%
+\contentsline {subsection}{\numberline {.1.2}Robot.py}{69}{subsection.Alph0.1.2}%
+\contentsline {section}{\numberline {.2}Artificial Intelligence Manager}{75}{section.Alph0.2}%
+\contentsline {subsection}{\numberline {.2.1}main.py}{75}{subsection.Alph0.2.1}%
+\contentsline {subsection}{\numberline {.2.2}RLAlgorithm.py}{77}{subsection.Alph0.2.2}%
+\contentsline {subsection}{\numberline {.2.3}Environment.py}{95}{subsection.Alph0.2.3}%
+\contentsline {subsection}{\numberline {.2.4}ImageController.py}{98}{subsection.Alph0.2.4}%
+\contentsline {chapter}{Bibliography}{100}{appendix*.21}%

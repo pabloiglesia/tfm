@@ -28,6 +28,25 @@
 \BOOKMARK [2][-]{subsection.5.3.2}{Environment.py}{section.5.3}% 28
 \BOOKMARK [2][-]{subsection.5.3.3}{Rewards}{section.5.3}% 29
 \BOOKMARK [2][-]{subsection.5.3.4}{Algorithm}{section.5.3}% 30
-\BOOKMARK [0][-]{chapter.6}{Results Analysis}{}% 31
-\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 32
-\BOOKMARK [0][-]{chapter*.14}{Bibliography}{}% 33
+\BOOKMARK [2][-]{subsection.5.3.5}{Training Flow}{section.5.3}% 31
+\BOOKMARK [2][-]{subsection.5.3.6}{Image Model}{section.5.3}% 32
+\BOOKMARK [1][-]{section.5.4}{Robot Controller}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.4.1}{Robot.py}{section.5.4}% 34
+\BOOKMARK [2][-]{subsection.5.4.2}{Block Detector}{section.5.4}% 35
+\BOOKMARK [1][-]{section.5.5}{Gripper}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.6}{Algorithm and System optimization}{chapter.5}% 37
+\BOOKMARK [2][-]{subsection.5.6.1}{Performance}{section.5.6}% 38
+\BOOKMARK [2][-]{subsection.5.6.2}{Training}{section.5.6}% 39
+\BOOKMARK [2][-]{subsection.5.6.3}{Why to use Block Detector?}{section.5.6}% 40
+\BOOKMARK [0][-]{chapter.6}{Results Analysis}{}% 41
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 42
+\BOOKMARK [-1][-]{part*.20}{Appendix}{}% 43
+\BOOKMARK [0][-]{section.Alph0.1}{Robot Controller}{part*.20}% 44
+\BOOKMARK [1][-]{subsection.Alph0.1.1}{main.py}{section.Alph0.1}% 45
+\BOOKMARK [2][-]{subsection.Alph0.1.2}{Robot.py}{subsection.Alph0.1.1}% 46
+\BOOKMARK [1][-]{section.Alph0.2}{Artificial Intelligence Manager}{section.Alph0.1}% 47
+\BOOKMARK [2][-]{subsection.Alph0.2.1}{main.py}{section.Alph0.2}% 48
+\BOOKMARK [2][-]{subsection.Alph0.2.2}{RLAlgorithm.py}{section.Alph0.2}% 49
+\BOOKMARK [2][-]{subsection.Alph0.2.3}{Environment.py}{section.Alph0.2}% 50
+\BOOKMARK [2][-]{subsection.Alph0.2.4}{ImageController.py}{section.Alph0.2}% 51
+\BOOKMARK [0][-]{appendix*.21}{Bibliography}{part*.20}% 52

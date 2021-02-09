@@ -303,4 +303,231 @@
 			
 			\subsection{Training Flow}
 			
+				This is a really complex process that it is easier to understand watching it graphically. 
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=1\linewidth]{"Images/Training step"}
+					\caption[Training Step]{Flow chart explaining training steps}
+					\label{fig:training-step}
+				\end{figure}
+				
+				In \autoref{fig:training-step}, we can see a flow chart explaining what happens during a training step in AI Manager. In the previous section I told that we would explain deeply what was the training process in AI Manager. We will explain it now with this chart, but, again, it is a simplified flow.
+				
+				As we can see in the graph, during a training step we have to do basically 2 main tasks. On one hand, we have to calculate the action for the Robot Controller to perform it. The process is simple, we get the current state (Onboard Image and Robot Coordinates), and we pass it through the policy network in order to calculate the Q Value of each action. We get the action with highest Q Value. 
+				
+				On the other hand we have the weird part, which is storing on the Replay Memory the experience of previous step. We have to stor the experience of step t-1 in step t because experience is composed on both initial and final state, and the reward. The initial state is known in step t-1, but the final state is not known until step t-1. The reward of action t-1 is also calculated in step t because it also depends on the final state of the agent.
+				
+				Finally, we train the algorithm in every step, following the steps shown on \autoref{fig:trainingprocess}.
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=1\linewidth]{Images/TrainingProcess}
+					\caption[Training Process]{Flow chart explaining the training process}
+					\label{fig:trainingprocess}
+				\end{figure}
+			
+				The training precess starts asking the Replay Memory if there are enough experience to supply a sample of size=batch\_size. If there are enough experience, then the Reply Memory provide a random sample of experiences and the training actually starts. The next step would be splitting the batch into batches of categories and calculate the current and next Q Values of all the samples of the batch.
+				
+				To calculate the current Q Values we use the policy network and to calculate the next Q values we use the target network. To understand why we use different networks it is recommended to read and try to understand the Deep Reinforcement Learning Section of the State of the Art of this document.
+				
+				The process of calculating the Q Values is also a little bit different in both cases, because for the next Q Value we have to first take out (Q Value = 0) all the samples of the batch in which the final state is terminal.
+				
+				Once we have the next Q Values calculated, we use the Bellman's Equation to calculate the target Q Values and then calculate the loss as the difference between the target Q Values and the current Q Values.
+				
+				Finally, we back-propagate the loss using the optimizer, to modify the weights of the policy neural network. The weights of the target neural network are frozen and only updated after X steps.
+				
+		\subsection{Image Model}
+		
+			Image model is the module which is connected to AI Manager and is in charge of extracting the features of the images. It uses some Data augmentation techniques to pre process the image, and then it is passed through a Convolutional Neural network to extract its features.
+			
+			We will talk about this later, but this is a really important step, not only because a good feature extraction is vital for training any neural network, but also because the size reduction of the image allows us to store a huge amount of experiences in the GPU memory without having to discard any of them because of memory problems.
+			
+			However, we will not analyse this module more deeply because it was not developed by me and for the aim of this document it works just as a Black Box. The author of this module was Pilar Hernandez, that worked together with me in the project.
+				
+	\section{Robot Controller}
+		
+		If the AI Manager is the intelligence of the system, if we continue with the human analogy, the Robot Controller would be the body of the system. As we saw in the \autoref{fig:architecture}, the Robot Controller is the central node, most of the nodes communicates with it, so it is a really important node
+		
+		Anyway, its complexity is much lower than the AI Manager complexity. The most important task of Robot Controller is to define the set of movements of all the actions. Just to remember, the actions are the ones showed in \autoref{fig:actions}, and Robot Controller will use the UR ICAM MoveIt implementation to perform these actions.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{Images/actions}
+			\caption[Actions]{Available actions}
+			\label{fig:actions}
+		\end{figure}
+	
+		 With MoveIt, you can tell the robot to go to a specific set of coordinates and it will automatically calculate the best path to reach this position. However, during the implementation of Robot Controller, we found problems executing this kind of movements, because the UR ICAM module wasn't calculating the path correctly, and the robot crashed against itself multiple times. 
+		 
+		 The solution to this problem was simply stop using this kind of movement, or, at least, to simplify the movement. We realised that we could perform without errors relative movements in every axis, that is to say that we could perform a movement over the axis X, a movement over the axis z but separately, not together. We called this relative move.
+		 
+		 Let's see how Robot Controller works. In Robot Controller there are multiple files, but only two important files:
+		 
+		 \begin{itemize}
+		 	\item[\textendash]\textbf{\textit{Robot.py}}: In this file we use UR ICAM to implement some methods as relative\_move(x, y, z), and implement all the actions.
+		 	\item[\textendash]\textbf{\textit{main.py}}: In this file we basically implement an infinite loop in which asking the service get\_actions for actions and executing them.
+		 \end{itemize}
+	 
+	 	\subsection{Robot.py}
+	 	
+	 		Robot.py is a python Class that implements a set of methods. It is important to say that Robot.py is also using the Environment.py class that we created in AI Manager, to retrieve all the information about the Environment. We have done it this way to make it easy to change the parameters of training in both AI Manager and Robot Controller at the same time. 
+	 		
+	 		The methods implemented are:
+	 		
+	 		\begin{itemize}
+	 			\item[\textendash]\textbf{\textit{relative\_move(self, x, y, z)}}: this function takes as parameter the distance in meters to move through each axis. The distance can be positive or negative, and the method will calculate and execute the movements to reach this position.
+	 			\item[\textendash]\textbf{\textit{calculate\_relative\_movement(self, relative\_coordinates}}: This method will be used to calculate the relative moves needed to reach certain coordinats. You can see that the parameter passed is called relative\_coordinates. This is like that because we are talking about the coordinates of our environment and not the coordinates of our robot. This make the calculation more difficult, because in UR ICAM we can only get the current Cartesian coordinates of the robot, but not the position of the robot into our environment. 
+	 			
+	 			To calculate the relative moves needed, though, we will have to translate the relative coordinates on robot coordinates as \textit{Environment.CARTESIAN\_CENTER - relative\_coordinates} and then calculate the difference between the result and the robot current cartesian coordinates.
+	 			\item[\textendash]\textbf{\textit{calculate\_current\_coordinates(self)}}: This method is the opposite problem, we use it to translate from robot Cartesian coordinates to Environment coordinates, and we use it to calculate the position of the robot into our environment.
+	 			\item[\textendash]\textbf{\textit{take\_north(self, distance=Environment.ACTION\_DISTANCE)}}: This is the north action of the model. It is basically a relative movement of size Environment.ACTION\_DISTANCE in the x axis.
+	 			\item[\textendash]\textbf{\textit{take\_south(self, distance=Environment.ACTION\_DISTANCE)}}: This is the south action of the model. It is basically a negative relative movement of size Environment.ACTION\_DISTANCE in the x axis.
+	 			\item[\textendash]\textbf{\textit{take\_east(self, distance=Environment.ACTION\_DISTANCE)}}: This is the east action of the model. It is basically a negative relative movement of size Environment.ACTION\_DISTANCE in the y axis.
+	 			\item[\textendash]\textbf{\textit{take\_west(self, distance=Environment.ACTION\_DISTANCE)}}: This is the west action of the model. It is basically a relative movement of size Environment.ACTION\_DISTANCE in the y axis.
+	 			\item[\textendash]\textbf{\textit{send\_gripper\_message(self, msg, timer=2, n\_msg=10)}}: This is a method used to activate or deactivate the gripper. It sends a burst of messages to ensure that the gripper really switch its state and waits a little bit to allow the robot to pick a piece.
+	 			\item[\textendash]\textbf{\textit{take\_pick(self)}}: This is the pick action of the model. To perform this action we have to use a new kind of movement: asynchronous relative movement. It is the same movement than before, but we can execute code during the execution of the movement.
+	 			
+	 			We need to execute code during the movement because we do not know how far the pieces are, so we have to start going down and, during the execution, check the distance topic in order to know when to stop. Once the robot is in contact with an object, the gripper will send a message to the distance topic, Robot Controller will receive it and will stop the movement. 
+	 			
+	 			Finally, we activate the gripper using send\_gripper\_message(), will go up to the original position, and will check if the robot has picked an object or not. If it hasn't picked an object it will switch the gripper off and would finish the action, but if it has picked an object, it will execute the take\_place() action.
+	 			
+	 			To understand better this action, you can check the flow diagram showed in \autoref{fig:nodeinteraction}.
+	 			
+	 			\item[\textendash]\textbf{\textit{take\_place(self)}}: This is the place action. This is not actually an action of the model, because it theoretically belongs to the pick action, but in the implementation of Robot.py we decided to split the method in two different actions.
+	 			
+	 			In this action, the robot goes to the place position and then switch the gripper off. In this moment, it take a picture of the environment from the Upper Camera node. Using this picture and the Block Detector analysis, it will calculate the point of the box with a bigger amount of pieces, and will send the coordinates to the take\_random\_state() action.
+	 			
+	 			\item[\textendash]\textbf{\textit{take\_random\_state(self)}}: This is the action used to reach some coordinates of the box. Probably the name is not the best, if I had to renamed it now I would called it go\_to\_initial\_state(), but at the beginning of the implementation the idea was to make this movement randomly and it took the name from it.
+	 			
+	 		\end{itemize}
+ 		
+		
+		\subsection{Block Detector}
+		
+			This module is used by Robot Controller but wasn't developed by me, so I will only introduce the goal of the module and what it does, because for the aim of this project it is like a black box. The author of this module was Pilar Hernandez, that worked together with me in the project.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\linewidth]{"Images/upper view"}
+				\caption[Upper View]{Upper View of the environment}
+				\label{fig:upper-view}
+			\end{figure}
+			
+			This module is used during the place action in order to know in which point of the box we should start the next episode. Once the robot had placed the object, it would take a picture from the environment as the one showed in \autoref{fig:upper-view}. Robot Controller would pass the image to the Block detector, which would perform a test similar to the one in \autoref{fig:block-detector}, in which it has calculated all the shapes of the image, and it has calculated the place inside the box with a higher amount of points detected
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\linewidth]{"Images/Block Detector"}
+				\caption[Block Detector]{Block Detector working}
+				\label{fig:block-detector}
+			\end{figure}
+		
+			As we can see in the \autoref{fig:block-detector}, where the blue point would represent the return point of the robot, the block detector haven't probably selected the optimal point, but it is a good one, because it is close to a piece when most of the box is empty.
+		
+	\section{Gripper}
+		
+		This node is the last one of our architecture. Just to remember, we decided to use a vacuum gripper because it is really easy to pick object with it. Obviously there are objects that you cannot pick with it, but when you can, you just have to push your gripper against the object and activate the pump. The gripper used is the one showed in \autoref{fig:gripper}.
+		
+		This node is running over an arduino card, which is the controller of the gripper. In the arduino card we have three different peripherals:
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{Images/Gripper}
+				\caption[Gripper]{Front view of the gripper}
+				\label{fig:gripper}
+			\end{figure}
+			
+			\begin{itemize}
+				\item[\textendash]\textbf{Contact sensor:} This is the one that detects if the gripper is in contact with an object. It isn't really a contact sensor, as we can see in \autoref{fig:gripper}, the sucker has actually a mechanical system that can go down or up about 1cm. When a robot touches an object, this object pushes up the sucker and, when the bar goes up it pushes a switch, which is actually the sensor.
+				
+				It was really difficult to design and make this system work, but we will talk later about that.
+				\item[\textendash]\textbf{Object gripped sensor:} To detect if an object has been gripped or not, we have used an air flow sensor. to make it work we connected it as a ramification of the main air pipe. This way, it will not detect any air flow when there is no object picked (All the air is taken from outside), but when an object is picked, the air flow from the outside will stop, creating a vacuum in the pipes and activating the sensor.
+				\item[\textendash]\textbf{Pump switcher:} the pump has to be activated or deactivated programmatically from the arduino card.
+			\end{itemize}
+		
+			As commented before, to read or control these peripherals we have the following topics:
+			
+			\begin{itemize}
+				\item[\textendash]\textbf{\textit{\textbackslash distance: }} The gripper is publishing continuously if the gripper is being pushed up or not. Robot Controller wants this information to know when to stop during the pick movement. The Robot basically goes down while \textbf{\textit{\textbackslash distance}} are "False" and stops when they are "True".
+				\item[\textendash]\textbf{\textit{\textbackslash switch\_on\_off: }} The gripper listens to this topic. When it receives a "True" message it switch the gripper on, and when it receives a "False" message it switch the gripper off.
+				\item[\textendash]\textbf{\textit{\textbackslash object\_gripped: }} The gripper is publishing continuously if there is an object gripped or not. Robot Controller use this information during the pick action. When this action is finished, robot controller checks if an object has been picked or not by reading from this topic. If an object has been picked it goes to the box to place the object and, if not, it just finishes the pick action and request AI Manager for a new action.
+			\end{itemize}
+		
+	\section{Algorithm and System optimization}
+	
+		Reaching the final version of the system and the algorithm was a really complex and progressive exercise. It is impossible to narrate here all the decisions that we had to make in the process, but I will try to explain the most importants.
+		
+		\subsection{Performance}
+			
+			Deep Reinforcement learning can be a really intense CPU and RAM consumer. In fact, during the firs steps of the training the time betwen two actions were between 3 and 5 seconds. This may not look a lot, but having in mind that a Reinforcement Learning training can have more than 10000 steps, we would loose between 30000 and 50000 seconds just calculating actions (We would have to execute them later). In hours, it would be between 8 and a half hours and 13,8 hours.
+			
+			We had to solve it, so we tried installing a Nvidia GPU in the computer together with the CUDA drivers. After hours of installation, the results were amazing. We designed a load test to test it and these are the results:
+			
+			\begin{center}
+				\begin{tabular}{cccc}
+					\toprule 
+					& CPU  & GPU \\ 
+					\midrule
+					\rowcolor{black!20} raiv2 & 3:53 minutes & 49 minutes \\
+					dl & 3:14 minutes & 36:31 minutes \\ 
+					\bottomrule
+				\end{tabular}
+				\captionof{table}{Difference in performance between CPU and GPU trainings}
+			\end{center}
+			
+			In the table we can see the time difference between CPU and GPU and between raiv2 and dl. raiv2 is de development computer and dl the execution one, because have a much better GPU and CPU, as it can be seen in the results. It was important to solve this problem, because if we couldn't, we would have to train the network once in each N steps instead of training it in every step.
+			
+			Another performance problem of Deep Reinforcement Learning has to be with the Replay Memory. In replay Memory we store all the experiences of the agent in order to take smaller samples of experiences to train the algorithm. The problem comes because all the experiences are stored in the GPU memory and, having in mind that in each experience we are saving 2 images, it was impossible to store more than 2000 experiences.
+			
+			2000 experiences could be enough for the training, but the highest the Replay Memory size, the better. To solve this problem, we decided to store the features extracted from the images instead of the images themselves. With this solution, we introduce a second limitation which is that we heve to finish the training with the same feature extractor that we started it.
+			
+			However, this isn't a project because we have this limitation anyway, it wouldn't make sense to use a different feature extractor, because the algorithm has been trained with the first feature extractor.
+		
+		\subsection{Training}
+			
+			One of the most difficult things in Deep Learning Algorithms is tuning the algorithm. In this case we had to tune two neural networks and the Reinforcement Learning Algorithm. The CNN was training using the images of previous trainings. We performed several days of training with a silly Neural Network. As Reinforcement Learning training it was totally useless, but we used to store and classify thousands of pick images.
+			
+			The initial image state of every pick action performed was saved together with the success or failure information of the movement. Whith this images and the labels we trained a Neural Network to classify this images, and we used the first layers of this model as feature extractor for the Reinforcement Learning Algorithm.
+			
+			Then, we had to tune the Reinforcement Learning Algorithm, but we will talk about this in the analysis and results section of this document.
+			
+		\subsection{Why to use Block Detector?}
+
+			During the first steps of the training, we were doing normal training and, every time that an episode was ended, either by reaching the environment limits or by picking a piece, the robot was starting a new episode by going to a new random pair of coordinates. This looked as the best option at the beginning, because it was the simplest solution, and also because we wanted to ensure low correlation between consecutive steps and random decisions are sometimes the best way of reaching low correlation between samples.
+			
+			However, during these first episodes we observed that the robot was emptying the pieces of the centre of the box, but it was more difficult for it to pick the pieces that were near to the edges. The coordinates were chosen completely randomly, so we then realized that, although the coordinates probability distribution of the starting point of the episode was uniform, the probability of passing through the centre of the environment during an episode was actually higher than the probability of reaching the box sides. 
+			
+			The explanation of this is simple, when the initial point of the Episode is in the centre, the probability of reaching any of the four sides of the box is the same while, when the initial point of the environment is one of the sides, its much more complicated to reach another side of the box without passing through the centre.
+			
+			To check this theory we included the coordinates of ech step in the training statistics, an the results were the ones showed in \autoref{fig:robot-heatmapi}. In this image we can see the heatmap of the movements of the robot and how the probability of reaching the centre of the box was mucho more higher than the probability of reaching the sides.
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\linewidth]{"Images/Robot HeatmapI"}
+				\caption[Robot Heatmap]{Robot position Heatmap}
+				\label{fig:robot-heatmapi}
+			\end{figure}
+		
+			In an ideal algorithm, this distribution should be uniform, because the distribution of pieces in the box is uniform. To solve this problem, we used a new strategy for calculating the initial point of the environments. In this case, we decided not to send the robot to de centre of the box, that is to say, sending it always to the sides. With this strategy, we knew that the robot was going to pass through the centre of the box, but we was not expecting the distribution of probabilities to be as uniform as it was. The results were really good, as can be seen in the \autoref{fig:robot-heatmapii}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.9\linewidth]{"Images/Robot HeatmapII"}
+				\caption[Heatmap robot II]{Robot position Heatmap with the new strategy}
+				\label{fig:robot-heatmapii}
+			\end{figure}
+		
+			The robot behaved better with this new strategy, because now it was managing to empty better the sides of the box. However, there was another problem that we had with both strategies. The problem was that, when the box was almost empty, as the initial position of each episode was chosen randomly, most of the times the robot was going to places with no pieces, and it was taking a lot of time to empty the full box. The robot was working correctly with the box full of pieces, but not were there were just few of them.
+			
+			To solve this problem, we decided to implement the Block Detector. We commented it before, so I will not explain again how it works, but the important thing is that it allowed us to move the robot to the places with highest amount of pieces, making the robot performance great with or without a high amount of pieces. The best thing is that, as the place with highest amount of pieces varies during the training, the distribution of the robot position kept constantly distributed during the whole box.
+			
+		
+		\todo{gripper design}
+		
+			
+			
+				
+				
+			
 				
