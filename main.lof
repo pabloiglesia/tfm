@@ -32,4 +32,9 @@
 \contentsline {figure}{\numberline {5.16}{\ignorespaces Robot Heatmap}}{61}{figure.5.16}%
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Heatmap robot II}}{62}{figure.5.17}%
 \addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Pick actions per episode}}{65}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Reward per episode}}{66}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Steps per episode}}{66}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Random actions per episodes}}{67}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Successful episodes}}{68}{figure.6.5}%
 \addvspace {10pt}

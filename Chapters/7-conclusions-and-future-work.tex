@@ -1,2 +1,27 @@
 \chapter{Conclusions and Future Work}
-	Comentar las conclusiones del proyecto, destacando lo que se ha hecho, dejando claros qué objetivos se han cubierto y cuáles son las aportaciones hechas. 
+
+	In  the previous section we talked about the results, but the most important thing that we have to do when analysing the results of a project is compare the results with the objectives. Just to remember, the objectives of the project were the following:
+	
+	\begin{itemize}
+		\item[\textendash]Implement a bin picking simple solution. A basic one, without Artificial Intelligence.
+		\item[\textendash]Improve the performance using RL and Image Recognition.
+		\item[\textendash]Study the usage of new technologies to add information to the system. 
+		\item[\textendash]Create a functional system that can be continued and that delivers the first results.
+		\item[\textendash]The system should empty the box with a rhythm of 2 pieces per minute.
+	\end{itemize}
+	
+	It is important to have in mind that the project is not a fully functional system. We couldn't probably sell the product to anyone in this state, but taking into account the complexity of the project, that we were starting from zero and th results obtained, I would say that we have reached the expectations.
+	
+	Analysing the objectives, we have implemented a simple and complex bin picking solution, studying and adding new technologies such as the Block Detector or Prior Knowledge. Besides, we have implemented a functional system that has to be improved, but it works in a good way, improving the objective of picking 2 pieces per minute in almost 20 seconds. 
+	
+	This last objective may not seem a lot, but it is important to take into account that the system has been implemented in a real robot, and just the pick and place action can take about 30 seconds to be taken.
+	
+	During the whole project we have passed through a lot of adversities. It was difficult to make the communication between ROS nodes work, the development of the home made gripper took more time than expected, there were a national lock down in France that last over 2 months... In every moment we knew that we were on a project and that all these things could happen. If we were locked i some task, we managed to find a complementary task in order to not being stopped.
+	
+	In my opinion, we have done a really good job and we have proven that Reinforcement Learning is a good solution for this kind of problems. The solution implemented is still far from its final version, but we have created a really good starting point for other people. I am glad that the project will be followed in the following months and it will probably reach a much better state.
+	
+	The solution implemented was working, but I think that there is still a lot of work to do. For example, the agent was learning that when the background of the images was white (No pieces in the box), he shouldn't perform a pick action. We tested for a long time, and if there were no pieces in the box, the robot was rarely performing pick actions, coinciding with the minimum random action ratio.
+	
+	However, in my opinion, the agent wasn't really detecting the best place for taking a pick action, but the worst, and it was performing pick actions in the rest of the places. There is a lot of work to do on fine tuning the Algorithm to find its optimal state. Probably with hours and hours of training it will be possible.
+	
+	There are other important things to do in the project, as trying to generalize the model in order to be able to pick not only the wooden squares but any other kind of objects. In order to do so, it will take a lot of hours of training with some different objects.

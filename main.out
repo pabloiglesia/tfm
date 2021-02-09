@@ -40,8 +40,8 @@
 \BOOKMARK [2][-]{subsection.5.6.3}{Why to use Block Detector?}{section.5.6}% 40
 \BOOKMARK [0][-]{chapter.6}{Results Analysis}{}% 41
 \BOOKMARK [0][-]{chapter.7}{Conclusions and Future Work}{}% 42
-\BOOKMARK [-1][-]{part*.20}{Appendix}{}% 43
-\BOOKMARK [0][-]{section.Alph0.1}{Robot Controller}{part*.20}% 44
+\BOOKMARK [-1][-]{part*.17}{Appendix}{}% 43
+\BOOKMARK [0][-]{section.Alph0.1}{Robot Controller}{part*.17}% 44
 \BOOKMARK [1][-]{subsection.Alph0.1.1}{main.py}{section.Alph0.1}% 45
 \BOOKMARK [2][-]{subsection.Alph0.1.2}{Robot.py}{subsection.Alph0.1.1}% 46
 \BOOKMARK [1][-]{section.Alph0.2}{Artificial Intelligence Manager}{section.Alph0.1}% 47
@@ -49,4 +49,4 @@
 \BOOKMARK [2][-]{subsection.Alph0.2.2}{RLAlgorithm.py}{section.Alph0.2}% 49
 \BOOKMARK [2][-]{subsection.Alph0.2.3}{Environment.py}{section.Alph0.2}% 50
 \BOOKMARK [2][-]{subsection.Alph0.2.4}{ImageController.py}{section.Alph0.2}% 51
-\BOOKMARK [0][-]{appendix*.21}{Bibliography}{part*.20}% 52
+\BOOKMARK [0][-]{appendix*.18}{Bibliography}{part*.17}% 52

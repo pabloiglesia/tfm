@@ -50,14 +50,14 @@
 \contentsline {subsection}{\numberline {5.6.2}Training}{60}{subsection.5.6.2}%
 \contentsline {subsection}{\numberline {5.6.3}Why to use Block Detector?}{60}{subsection.5.6.3}%
 \contentsline {chapter}{\numberline {6.}Results Analysis}{64}{chapter.6}%
-\contentsline {chapter}{\numberline {7.}Conclusions and Future Work}{65}{chapter.7}%
-\contentsline {part}{Appendix}{66}{part*.20}%
-\contentsline {section}{\numberline {.1}Robot Controller}{67}{section.Alph0.1}%
-\contentsline {subsection}{\numberline {.1.1}main.py}{67}{subsection.Alph0.1.1}%
-\contentsline {subsection}{\numberline {.1.2}Robot.py}{69}{subsection.Alph0.1.2}%
-\contentsline {section}{\numberline {.2}Artificial Intelligence Manager}{75}{section.Alph0.2}%
-\contentsline {subsection}{\numberline {.2.1}main.py}{75}{subsection.Alph0.2.1}%
-\contentsline {subsection}{\numberline {.2.2}RLAlgorithm.py}{77}{subsection.Alph0.2.2}%
-\contentsline {subsection}{\numberline {.2.3}Environment.py}{95}{subsection.Alph0.2.3}%
-\contentsline {subsection}{\numberline {.2.4}ImageController.py}{98}{subsection.Alph0.2.4}%
-\contentsline {chapter}{Bibliography}{100}{appendix*.21}%
+\contentsline {chapter}{\numberline {7.}Conclusions and Future Work}{69}{chapter.7}%
+\contentsline {part}{Appendix}{71}{part*.17}%
+\contentsline {section}{\numberline {.1}Robot Controller}{72}{section.Alph0.1}%
+\contentsline {subsection}{\numberline {.1.1}main.py}{72}{subsection.Alph0.1.1}%
+\contentsline {subsection}{\numberline {.1.2}Robot.py}{74}{subsection.Alph0.1.2}%
+\contentsline {section}{\numberline {.2}Artificial Intelligence Manager}{80}{section.Alph0.2}%
+\contentsline {subsection}{\numberline {.2.1}main.py}{80}{subsection.Alph0.2.1}%
+\contentsline {subsection}{\numberline {.2.2}RLAlgorithm.py}{82}{subsection.Alph0.2.2}%
+\contentsline {subsection}{\numberline {.2.3}Environment.py}{100}{subsection.Alph0.2.3}%
+\contentsline {subsection}{\numberline {.2.4}ImageController.py}{103}{subsection.Alph0.2.4}%
+\contentsline {chapter}{Bibliography}{105}{appendix*.18}%
